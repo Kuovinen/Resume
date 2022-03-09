@@ -16,7 +16,7 @@ export default function Header(props) {
       <div className="headContainer2">
         <Topic key="t1" name="RESUME" eventHandler={props.resumeHandler} />
         <Topic key="t2" name="PROJECTS" eventHandler={scrollDown} />
-        <Topic key="t3" name="CONTACT" />
+        <Topic key="t3" name="CONTACT" eventHandler={props.contactHandler} />
       </div>
       <div className="addressContainer">
         <div className="adress">roman.zujev@gmail.com</div>
