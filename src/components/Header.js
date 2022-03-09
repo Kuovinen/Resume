@@ -1,6 +1,7 @@
 import Topic from "./Topic.js";
 import git from "../git.svg";
-export default function Header() {
+import scrollDown from "./handlers.js";
+export default function Header(props) {
   return (
     <header>
       <div className="headContainer1">
@@ -13,9 +14,13 @@ export default function Header() {
       </div>
       <div className="divider"></div>
       <div className="headContainer2">
-        <Topic name="RESUME" />
-        <Topic name="PROJECTS" />
-        <Topic name="CONTACT" />
+        <Topic key="t1" name="RESUME" eventHandler={props.resumeHandler} />
+        <Topic key="t2" name="PROJECTS" eventHandler={scrollDown} />
+        <Topic key="t3" name="CONTACT" />
+      </div>
+      <div className="addressContainer">
+        <div className="adress">roman.zujev@gmail.com</div>
+        <div className="verticalLine"></div>
       </div>
     </header>
   );
