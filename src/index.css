@@ -25,7 +25,7 @@ header {
   gap: 1vh;
   justify-content: center;
   /*flex-wrap: wrap;*/
-  margin-top: 10rem;
+  margin-top: 15vh;
   margin-bottom: 53vh;
 }
 .headContainer1,
@@ -77,6 +77,74 @@ h1 {
 .topic:hover {
   cursor: pointer;
 }
+.addressContainer {
+  position: absolute;
+  top: 15vh;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.adress {
+  position: relative;
+  color: var(--cp-lYellow);
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  cursor: pointer;
+}
+.adress:hover {
+  top: -1rem;
+}
+.verticalLine {
+  width: 0.1rem;
+  height: 50vh;
+  margin-top: 1rem;
+  background: var(--cp-lYellow);
+}
+#resume {
+  position: absolute;
+  top: 30vh;
+  width: 90%;
+  margin: 5%;
+  border-radius: 0.5rem;
+
+  font-size: 3vh;
+  background: var(--cp-Black);
+  border: 0.1rem solid var(--cp-lYellow);
+}
+.closer {
+  position: absolute;
+  content: "X";
+  cursor: pointer;
+  top: -2rem;
+  right: 0.5rem;
+  color: var(--cp-lYellow);
+}
+#resume > p {
+  margin: 1rem;
+}
+.tech {
+  color: var(--cp-lYellow);
+}
+ul {
+  margin: 1rem;
+  list-style-type: none;
+}
+li:before {
+  content: "// ";
+  color: var(--cp-lGreen);
+}
+.tools {
+  color: var(--cp-lGreen);
+}
+#toolsList {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+#toolsList > li:before {
+  content: "O ";
+}
 .arrow {
   position: relative;
   height: 2vh;
@@ -88,13 +156,14 @@ h1 {
   animation-name: arrow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 #main {
   background-color: var(--cp-dGreen);
   color: var(--cp-Black);
   padding-bottom: 2vh;
 }
-span {
+#projectLogo {
   margin-left: 2vh;
   user-select: none;
   font-size: 5vh;
@@ -112,28 +181,41 @@ br {
   width: 98%;
   grid-template-columns: repeat(3, 1fr);
 }
-.project {
+.project,
+.projectU {
   position: relative;
   background: var(--cp-dGrey);
   border-radius: 1rem;
   height: 35vh;
   color: var(--cp-Black);
   font-size: 2vh;
+  overflow: hidden;
 }
-.project:hover {
+.project:hover,
+.projectU:hover {
   outline: 0.2rem solid var(--cp-lGrey);
 }
-.img {
+.projectU:before {
+  content: "unfinished";
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  color: white;
+  background-color: var(--cp-lYellow);
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+img {
   width: 98%;
   height: 70%;
   margin: 1%;
   border-radius: 1rem;
-  background-image: url("image.jpg");
 }
+
 .projectTitle {
   text-align: center;
   z-index: 2;
-  background: var(--cp-lGrey);
+  color: white;
 }
 .buttons {
   position: relative;
@@ -147,20 +229,18 @@ button {
   border: none;
   border-radius: 1rem;
   padding: 1vh;
-  background: var(--cp-lGreen);
+  background: var(--cp-dYellow);
   margin: 1%;
   flex: 1;
   font-weight: 1000;
-  color: var(--cp-lGrey);
+  color: var(--cp-Black);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 button:hover {
-  transition: 1s;
-  background: var(--cp-lYellow);
-  color: var(--cp-Black);
+  opacity: 0.75;
 }
 @keyframes arrow {
   0% {
