@@ -1,3 +1,7 @@
 export default function Topic(props) {
-  return <div className="topic">{props.name}</div>;
+  return (
+    <div className="topic" onClick={props.eventHandler}>
+      {props.name}
+    </div>
+  );
 }
