@@ -1,7 +1,7 @@
 export default function Project(props) {
   return (
-    <div className="project">
-      <div className="img"></div>
+    <div className={props.class}>
+      <img src={props.img} alt={props.name + " img"} />
       <div className="projectTitle">{props.name}</div>
       <div className="buttons">
         <button>CODE</button>
