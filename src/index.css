@@ -14,6 +14,7 @@
   margin: 0rem;
   padding: 0rem;
   font-family: arial;
+  box-sizing: border-box;
 }
 body {
   background: var(--cp-Black);
@@ -63,6 +64,7 @@ h1 {
 .topic {
   font-size: 5vh;
   line-height: 4vh;
+  user-select: none;
 }
 .topic:before {
   content: "/";
@@ -101,7 +103,8 @@ h1 {
   margin-top: 1rem;
   background: var(--cp-lYellow);
 }
-#resume {
+#resume,
+#form {
   position: absolute;
   top: 30vh;
   width: 90%;
@@ -111,6 +114,59 @@ h1 {
   font-size: 3vh;
   background: var(--cp-Black);
   border: 0.1rem solid var(--cp-lYellow);
+}
+#form {
+  display: grid;
+  gap: 3vh;
+  padding: 3vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+#form > input,
+textarea {
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--cp-dGreen);
+  height: 100%;
+  color: var(--cp-lGrey);
+  padding: 0.5rem;
+  font-size: 2vh;
+}
+#form > input:focus,
+#form > textarea {
+  background: var(--cp-dGreen);
+  border: none;
+  outline: none;
+}
+#form > input::placeholder,
+#form > textarea::placeholder {
+  color: var(--cp-lGrey);
+}
+#form > input:placeholder-shown {
+  vertical-align: top;
+}
+#map {
+  background: var(--cp-lYellow);
+  grid-column: 5 / 7;
+  grid-row: 1 / 4;
+}
+#name {
+  grid-column: 1/3;
+}
+#email {
+  grid-column: 3/5;
+}
+#subject,
+#message {
+  grid-column: 1 / 5;
+}
+#message {
+  height: auto;
+}
+#form > button {
+  grid-column: 2 / 4;
+  font-size: 1.5rem;
 }
 .closer {
   position: absolute;
@@ -166,7 +222,7 @@ li:before {
 #projectLogo {
   margin-left: 2vh;
   user-select: none;
-  font-size: 5vh;
+  font-size: 7vh;
   line-height: 3vh;
   font-weight: 1000;
 }
