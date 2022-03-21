@@ -2,13 +2,16 @@ import Topic from "./Topic.js";
 import git from "../git.svg";
 import scrollDown from "./handlers.js";
 export default function Header(props) {
+  function openGit() {
+    window.open("https://github.com/RomanZujev", "_blank");
+  }
   return (
     <header>
       <div className="headContainer1">
         <h1>ROMAN ZUJEV</h1>
 
         <div className="iconsContainer">
-          <img src={git} alt="git" className="icon" />
+          <img src={git} alt="git" className="icon" onClick={openGit} />
           <img src={git} alt="git" className="icon" />
         </div>
       </div>
