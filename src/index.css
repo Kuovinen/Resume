@@ -4,8 +4,8 @@
   --cp-lGrey: rgb(185, 185, 185);
   --cp-dYellow: rgb(188, 154, 23);
   --cp-lYellow: rgb(207, 172, 51);
-  --cp-lGreen: rgb(85, 109, 48);
-  --cp-dGreen: rgb(26, 76, 61);
+  --cp-lGreen: rgb(99, 133, 48);
+  --cp-dGreen: rgb(4, 87, 62);
   --cp-White20: rgb(255, 255, 255, 0.2);
   --cp-White50: rgb(255, 255, 255, 0.5);
   --cp-White70: rgb(255, 255, 255, 0.7);
@@ -27,7 +27,7 @@ header {
   justify-content: center;
   /*flex-wrap: wrap;*/
   margin-top: 15vh;
-  margin-bottom: 53vh;
+  margin-bottom: 50vh;
 }
 .headContainer1,
 .headContainer2 {
@@ -52,6 +52,8 @@ h1 {
 }
 .icon {
   height: 6vh;
+  user-select: none;
+  cursor: pointer;
 }
 .icon:hover {
   filter: invert(39%) sepia(8%) saturate(2524%) hue-rotate(42deg)
@@ -203,8 +205,8 @@ li:before {
 }
 .arrow {
   position: relative;
-  height: 2vh;
-  width: 2vh;
+  height: 5vh;
+  width: 5vh;
   border-right: 0.3rem solid var(--cp-lGrey);
   border-bottom: 0.3rem solid var(--cp-lGrey);
   transform: rotate(45deg);
@@ -223,7 +225,7 @@ li:before {
   margin-left: 2vh;
   user-select: none;
   font-size: 7vh;
-  line-height: 3vh;
+  line-height: 4vh;
   font-weight: 1000;
 }
 br {
@@ -285,7 +287,7 @@ button {
   border: none;
   border-radius: 1rem;
   padding: 1vh;
-  background: var(--cp-dYellow);
+  background: var(--cp-lGreen);
   margin: 1%;
   flex: 1;
   font-weight: 1000;
