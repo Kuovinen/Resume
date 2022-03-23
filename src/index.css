@@ -253,10 +253,6 @@ br {
   align-items: center;
   flex-direction: column;
 }
-.project:hover,
-.projectU:hover {
-  outline: 0.2rem solid var(--cp-lYellow);
-}
 
 .projectU:before {
   content: "unfinished";
@@ -275,11 +271,10 @@ img {
 
 .projectTitle {
   text-align: center;
-  z-index: 2;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--cp-lYellow);
   font-weight: 700;
-  color: white;
-  background: var(--cp-Black);
-  border-radius: 1rem;
+  color: var(--cp-lYellow);
 }
 .buttons {
   position: relative;
@@ -290,22 +285,29 @@ img {
   justify-content: center;
   gap: 0.2vw;
   justify-content: space-around;
+  margin-top: 1vh;
 }
 
 button {
   border: none;
   padding: 1vh;
-  background: var(--cp-lGreen);
+  background: var(--cp-Black);
+  outline: 0.1vh solid var(--cp-lYellow);
   flex: 1;
-  font-weight: 1000;
+  font-weight: 800;
   font-size: 3vh;
   color: var(--cp-Black);
-  text-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  color: var(--cp-dGrey);
+  color: var(--cp-dYellow);
+  margin: 0 1rem;
+  border-radius: 2vh;
 }
 button:hover {
-  opacity: 0.75;
+  outline: 0.5vh solid var(--cp-lYellow);
+  color: var(--cp-lYellow);
 }
 @keyframes arrow {
   0% {
