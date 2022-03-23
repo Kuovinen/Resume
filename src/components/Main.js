@@ -19,6 +19,7 @@ const projects = [
     name="TASK MANAGER"
     class="projectU"
     img={taskManagerScreen}
+    code="https://github.com/RomanZujev/TaskManager"
   />,
   <Project
     key="p3"
@@ -36,7 +37,7 @@ const projects = [
   />,
   <Project
     key="p6"
-    name="API WEATHER"
+    name=" WEATHER & GOOGLEMAPS API "
     class="project"
     img={weatherMap}
     code="https://github.com/RomanZujev/weathermap"
