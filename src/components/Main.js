@@ -17,7 +17,7 @@ const projects = [
   <Project
     key="p2"
     name="TASK MANAGER"
-    class="projectU"
+    class="project"
     img={taskManagerScreen}
     code="https://github.com/RomanZujev/TaskManager"
   />,
