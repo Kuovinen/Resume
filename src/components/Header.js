@@ -31,7 +31,9 @@ export default function Header(props) {
         <Topic key="t3" name="CONTACT" eventHandler={props.contactHandler} />
       </div>
       <div className="addressContainer">
-        <div className="adress">roman.zujev@gmail.com</div>
+        <a className="adress" href="mailto:roman.zujev@gmail.com">
+          roman.zujev@gmail.com
+        </a>
         <div className="verticalLine"></div>
       </div>
     </header>
