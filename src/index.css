@@ -76,10 +76,11 @@ h1 {
 }
 .topic:hover::before {
   content: "//";
-  color: var(--cp-lYellow);
+  color: var(--cp-lGreen);
 }
 .topic:hover {
   cursor: pointer;
+  color: var(--cp-lGreen);
 }
 .addressContainer {
   position: absolute;
@@ -318,4 +319,7 @@ button:hover {
   100% {
     top: 0rem;
   }
+}
+a {
+  text-decoration: none;
 }
