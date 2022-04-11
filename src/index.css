@@ -111,7 +111,7 @@ h1 {
   top: 30vh;
   width: 90%;
   margin: 5%;
-  border-radius: 0.5rem;
+  border-radius: 1vh;
 
   font-size: 3vh;
   background: var(--cp-Black);
@@ -128,7 +128,7 @@ h1 {
 textarea {
   height: 2rem;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1vh;
   background: var(--cp-dGreen);
   height: 100%;
   color: var(--cp-lGrey);
@@ -243,7 +243,7 @@ br {
 .projectU {
   position: relative;
   background: var(--cp-Black);
-  border-radius: 1rem;
+  border-radius: 1vh;
   height: 35vh;
   color: var(--cp-Black);
   font-size: 2vh;
@@ -261,7 +261,7 @@ br {
   top: 0.5rem;
   color: white;
   background-color: var(--cp-lYellow);
-  border-radius: 1rem;
+  border-radius: 1vh;
   padding: 0.2rem;
 }
 img {
@@ -278,14 +278,14 @@ img {
 }
 .buttons {
   position: relative;
-  width: 100%;
+  width: calc(100% - 2vw);
   height: 17%;
-  border-radius: 1rem;
+  border-radius: 1vh;
   display: flex;
   justify-content: center;
-  gap: 0.2vw;
+  gap: 1rem;
   justify-content: space-around;
-  margin-top: 1vh;
+  margin: 1vh;
 }
 
 button {
@@ -302,8 +302,7 @@ button {
   align-items: center;
   cursor: pointer;
   color: var(--cp-dYellow);
-  margin: 0 1rem;
-  border-radius: 2vh;
+  border-radius: 1vh;
 }
 button:hover {
   outline: 0.5vh solid var(--cp-lYellow);
