@@ -13,6 +13,7 @@ const projects = [
     class="projectU"
     img={restaScreenshot}
     code="https://github.com/RomanZujev/Restaurant"
+    url="https://rztaskmanager.netlify.app/"
   />,
   <Project
     key="p2"
@@ -20,12 +21,14 @@ const projects = [
     class="project"
     img={taskManagerScreen}
     code="https://github.com/RomanZujev/TaskManager"
+    url="https://rztaskmanager.netlify.app/"
   />,
   <Project
     key="p3"
     name="MOVIE DATABASE"
     class="projectU"
     img={movieDBScreen}
+    url="https://rztaskmanager.netlify.app/"
   />,
   <Project key="p4" name="COOCKBOOK" class="projectU" img={cookbookDBScreen} />,
   <Project
@@ -34,6 +37,7 @@ const projects = [
     class="project"
     img={chatAppScreen}
     code="https://github.com/RomanZujev/chat-app"
+    url="https://rztaskmanager.netlify.app/"
   />,
   <Project
     key="p6"
@@ -41,6 +45,7 @@ const projects = [
     class="project"
     img={weatherMap}
     code="https://github.com/RomanZujev/weathermap"
+    url="https://rztaskmanager.netlify.app/"
   />,
 ];
 

@@ -1,14 +1,15 @@
 export default function Project(props) {
-  function openNewTab() {
-    window.open(props.code, "_blank");
+  function openNewTab(target) {
+    window.open(target, "_blank");
   }
+
   return (
     <div className={props.class}>
       <img src={props.img} alt={props.name + " img"} />
       <div className="projectTitle">{props.name}</div>
       <div className="buttons">
-        <button onClick={openNewTab}>CODE</button>
-        <button>PROJECT</button>
+        <button onClick={() => openNewTab(props.code)}>GITHUB</button>
+        <button onClick={() => openNewTab(props.url)}>WEBSITE</button>
       </div>
     </div>
   );
