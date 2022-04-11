@@ -48,7 +48,7 @@ h1 {
 
 .iconsContainer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .icon {
   height: 6vh;
