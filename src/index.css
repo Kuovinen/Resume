@@ -154,9 +154,9 @@ h1 {
 #resume,
 #form {
   position: absolute;
-  top: 30vh;
-  width: 70%;
-  margin: 5% 15%;
+  top: 35vh;
+  width: 80%;
+  margin: 5% 10%;
   border-radius: 1vh;
 
   font-size: 3vh;
@@ -170,7 +170,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 2fr 1fr;
 }
-#form > input,
+.fInput,
 textarea {
   height: 2rem;
   border: none;
@@ -181,18 +181,29 @@ textarea {
   padding: 0.5rem;
   font-size: 2vh;
 }
-#form > input:focus,
+.fInput:focus,
 #form > textarea {
   background: var(--cp-dGreen);
   border: none;
   outline: none;
 }
-#form > input::placeholder,
+.fInput::placeholder,
 #form > textarea::placeholder {
   color: var(--cp-lGrey);
 }
-#form > input:placeholder-shown {
+.fInput:placeholder-shown {
   vertical-align: top;
+}
+#sendBtn {
+  background: var(--cp-lYellow);
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 1vh;
+  cursor: pointer;
+  grid-column: 2/4;
+}
+#sendBtn:hover {
+  background: var(--cp-dYellow);
 }
 #map {
   background: var(--cp-lYellow);

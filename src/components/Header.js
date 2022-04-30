@@ -47,7 +47,7 @@ export default function Header(props) {
       </div>
       <div className="addressContainer">
         <div className="verticalLine"></div>
-        <a className="slogan"> {"<<webDesign"}</a>
+        <span className="slogan"> {"<<webDesign"}</span>
       </div>
     </header>
   );
