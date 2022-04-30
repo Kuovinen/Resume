@@ -12,7 +12,8 @@ const projects = [
     name="Restaurant expample"
     class="project"
     img={restaScreenshot}
-    desc="Restaurant page using React."
+    using="React."
+    hosted="Netlify"
     code="https://github.com/RomanZujev/Restaurant"
     url="https://rztaskmanager.netlify.app/"
   />,
@@ -21,7 +22,8 @@ const projects = [
     name="Task manager app"
     class="project"
     img={taskManagerScreen}
-    desc="Task manager app page using React and localstrogae."
+    using="React and localstrogae."
+    hosted="Netlify"
     code="https://github.com/RomanZujev/TaskManager"
     url="https://rztaskmanager.netlify.app/"
   />,
@@ -30,11 +32,12 @@ const projects = [
     name=" Weather report"
     class="project"
     img={weatherMap}
-    desc="Using:
+    using="
     GoogleMaps API, 
-    7Timer weather API 
-    Geonames API
+    7Timer weather API, 
+    Geonames API,
     Bootstrap "
+    hosted="Netlify"
     code="https://github.com/RomanZujev/weathermap"
     url="https://rztaskmanager.netlify.app/"
   />,
@@ -43,7 +46,8 @@ const projects = [
     name="Cookbook"
     class="project"
     img={cookbookDBScreen}
-    desc="Simple coockbook website using pure JavaScript"
+    using="pure JavaScript"
+    hosted="FireBase"
     code="https://github.com/RomanZujev/CookBook"
     url="https://zrcookbook.firebaseapp.com/"
   />,
@@ -52,7 +56,8 @@ const projects = [
     name="Chat app"
     class="projectU"
     img={chatAppScreen}
-    desc="React based chat application with it's own messaging server."
+    using="React, Redux."
+    hosted="FireBase"
     code="https://github.com/RomanZujev/chat-app"
     url="https://rztaskmanager.netlify.app/"
   />,
@@ -62,7 +67,8 @@ const projects = [
     name="Chat app server api"
     class="projectU"
     img={movieDBScreen}
-    desc="Messaging server for the React based chat application."
+    using="NodeJs."
+    hosted="LightSale"
     url="https://rztaskmanager.netlify.app/"
   />,
 ];

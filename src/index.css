@@ -315,13 +315,29 @@ br {
 .projectU:hover > .prImg {
   outline: 0.2rem solid white;
 }
-.prDescription {
+.prUsing {
   color: var(--cp-lGreen);
   padding: 0.2rem 0.5rem;
-  height: 35%;
-
+  height: 30%;
   width: 90%;
-  margin: 0 20px;
+  position: relative;
+  top: -1rem;
+}
+.prHosted {
+  color: var(--cp-lGreen);
+  padding: 0rem 0.5rem;
+  height: 5%;
+  width: 90%;
+  position: relative;
+  top: -1rem;
+}
+.prUsing::before {
+  content: "Utilising: ";
+  font-weight: 600;
+}
+.prHosted::before {
+  content: "Hosted on: ";
+  font-weight: 600;
 }
 .projectU:before {
   content: "WIP";

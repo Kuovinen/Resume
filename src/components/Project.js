@@ -7,7 +7,8 @@ export default function Project(props) {
     <div className={props.class}>
       <img className="prImg" src={props.img} alt={props.name + " img"} />
       <div className="projectTitle">{props.name}</div>
-      <p className="prDescription">{props.desc}</p>
+      <p className="prUsing">{props.using}</p>
+      <p className="prHosted">{props.hosted}</p>
       <div className="buttons">
         <button className="prBtn" onClick={() => openNewTab(props.url)}>
           WebPage
