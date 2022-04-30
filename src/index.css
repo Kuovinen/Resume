@@ -4,11 +4,15 @@
   --cp-lGrey: rgb(185, 185, 185);
   --cp-dYellow: rgb(188, 154, 23);
   --cp-lYellow: rgb(207, 172, 51);
-  --cp-lGreen: rgb(99, 133, 48);
+  --cp-lGreen: rgb(7, 130, 93);
   --cp-dGreen: rgb(4, 87, 62);
   --cp-White20: rgb(255, 255, 255, 0.2);
   --cp-White50: rgb(255, 255, 255, 0.5);
   --cp-White70: rgb(255, 255, 255, 0.7);
+
+  /*  --cp-dGreen: rgb(4, 87, 62);
+  --cp-lGreen: rgb(99, 133, 48);
+  */
 }
 * {
   margin: 0rem;
@@ -26,8 +30,8 @@ header {
   gap: 1vh;
   justify-content: center;
   /*flex-wrap: wrap;*/
-  margin-top: 15vh;
-  margin-bottom: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 45vh;
 }
 .headContainer1,
 .headContainer2 {
@@ -37,27 +41,51 @@ header {
   flex: 1;
 }
 .headContainer1 {
-  align-items: end;
+  width: fit-content;
+  gap: 0rem;
+  align-items: flex-end;
 }
 h1 {
   color: var(--cp-lYellow);
   font-size: 10vh;
   line-height: 8vh;
   flex: 1;
+  text-align: end;
 }
-
+.lastName {
+  letter-spacing: 0.5rem;
+}
 .iconsContainer {
   display: flex;
-  justify-content: flex-end;
+
+  align-items: center;
 }
-.icon {
+.icon1,
+.icon2,
+.icon3 {
   height: 6vh;
+  width: fit-content;
   user-select: none;
   cursor: pointer;
+  margin-left: 0.7rem;
 }
-.icon:hover {
-  filter: invert(39%) sepia(8%) saturate(2524%) hue-rotate(42deg)
-    brightness(94%) contrast(88%);
+.icon1 {
+  height: 4.7vh;
+}
+.icon3 {
+  height: 5vh;
+}
+.icon4 {
+  display: inline;
+  height: 1rem;
+}
+.icon1:hover,
+.icon2:hover,
+.icon3:hover {
+  filter: invert(76%) sepia(5%) saturate(6300%) hue-rotate(4deg)
+    brightness(178%) contrast(70%);
+  /* filter: invert(39%) sepia(8%) saturate(2524%) hue-rotate(42deg)
+    brightness(94%) contrast(88%);*/
   transition: 0.5s;
 }
 .divider {
@@ -90,28 +118,45 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
-.adress {
+.slogan {
   position: relative;
   color: var(--cp-lYellow);
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   cursor: pointer;
 }
-.adress:hover {
-  top: -1rem;
+.slogan:hover {
+  top: 0.5rem;
 }
 .verticalLine {
   width: 0.1rem;
   height: 50vh;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   background: var(--cp-lYellow);
+}
+#copyAddd {
+  color: var(--cp-lGreen);
+  font-size: 0.9rem;
+}
+.address {
+  color: var(--cp-lYellow);
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.address:hover {
+  opacity: 0.85;
 }
 #resume,
 #form {
   position: absolute;
   top: 30vh;
-  width: 90%;
-  margin: 5%;
+  width: 70%;
+  margin: 5% 15%;
   border-radius: 1vh;
 
   font-size: 3vh;
@@ -122,7 +167,7 @@ h1 {
   display: grid;
   gap: 3vh;
   padding: 3vh;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 #form > input,
@@ -208,10 +253,11 @@ li:before {
   position: relative;
   height: 5vh;
   width: 5vh;
-  border-right: 0.3rem solid var(--cp-lGrey);
-  border-bottom: 0.3rem solid var(--cp-lGrey);
+  border-right: 1rem solid var(--cp-lGrey);
+  border-bottom: 1rem solid var(--cp-lGrey);
   transform: rotate(45deg);
   margin-left: 50%;
+  margin-bottom: 1rem;
   animation-name: arrow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -236,78 +282,111 @@ br {
   display: grid;
   gap: 4vh;
   margin: 1%;
-  margin-top: 2%;
+  margin-top: 5vh;
   width: 98%;
-  grid-template-columns: repeat(3, 1fr);
+  /*
+  grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  background: var(--cp-Black);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 .project,
 .projectU {
   position: relative;
   background: var(--cp-Black);
-  border-radius: 1vh;
+  border-radius: 0.35rem;
   height: 35vh;
+  max-width: 25rem;
   color: var(--cp-Black);
   font-size: 2vh;
-  overflow: hidden;
-  outline: 0.2rem solid var(--cp-Black);
+
+  border: 0.1rem solid var(--cp-dGreen);
+  border-top: 2rem solid var(--cp-dGreen);
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+.project:hover,
+.projectU:hover {
+  outline: 0.2rem solid var(--cp-dGreen);
+}
+.project:hover > .prImg,
+.projectU:hover > .prImg {
+  outline: 0.2rem solid white;
+}
+.prDescription {
+  color: var(--cp-lGreen);
+  padding: 0.2rem 0.5rem;
+  height: 35%;
 
+  width: 90%;
+  margin: 0 20px;
+}
 .projectU:before {
-  content: "unfinished";
+  content: "WIP";
   position: absolute;
+  font-weight: 600;
+  font-size: 0.8rem;
   right: 0.5rem;
-  top: 0.5rem;
-  color: white;
-  background-color: var(--cp-lYellow);
-  border-radius: 1vh;
+  top: 1rem;
+  color: var(--cp-Black);
+  background-color: var(--cp-lGrey);
+  border-radius: 0.4rem;
   padding: 0.2rem;
 }
-img {
-  width: 100%;
-  height: 70%;
+.prImg {
+  width: 15rem;
+  height: 7rem;
+  object-fit: fill;
+  position: relative;
+  top: -3rem;
+  outline: 0.1rem solid var(--cp-lGrey);
+  border-radius: 0.25rem;
 }
 
 .projectTitle {
+  z-index: 2;
   text-align: center;
-  width: 100%;
-  border-bottom: 0.1rem solid var(--cp-lYellow);
-  font-weight: 700;
-  color: var(--cp-lYellow);
+  height: 10%;
+  width: 103%;
+  position: relative;
+  top: -2rem;
+  font-weight: 1000;
+  color: var(--cp-Black);
+  border-radius: 0.25rem;
+  background: var(--cp-lGrey);
 }
 .buttons {
   position: relative;
   width: calc(100% - 2vw);
-  height: 17%;
+  height: 10%;
   border-radius: 1vh;
   display: flex;
   justify-content: center;
   gap: 1rem;
   justify-content: space-around;
-  margin: 1vh;
+  margin: 1vh 5%;
 }
 
-button {
+.prBtn {
   border: none;
   padding: 1vh;
   background: var(--cp-Black);
-  outline: 0.1vh solid var(--cp-lYellow);
-  flex: 1;
-  font-weight: 800;
-  font-size: 3vh;
-  color: var(--cp-Black);
+  width: 50%;
+
+  font-size: 1.5rem;
+  color: var(--cp-lYellow);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: var(--cp-dYellow);
-  border-radius: 1vh;
-}
-button:hover {
-  outline: 0.5vh solid var(--cp-lYellow);
   color: var(--cp-lYellow);
+  border-radius: 0.4rem;
+  padding: 0 1rem;
+}
+.prBtn:hover {
+  opacity: 0.7;
 }
 @keyframes arrow {
   0% {

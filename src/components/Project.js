@@ -5,11 +5,16 @@ export default function Project(props) {
 
   return (
     <div className={props.class}>
-      <img src={props.img} alt={props.name + " img"} />
+      <img className="prImg" src={props.img} alt={props.name + " img"} />
       <div className="projectTitle">{props.name}</div>
+      <p className="prDescription">{props.desc}</p>
       <div className="buttons">
-        <button onClick={() => openNewTab(props.code)}>GITHUB</button>
-        <button onClick={() => openNewTab(props.url)}>WEBSITE</button>
+        <button className="prBtn" onClick={() => openNewTab(props.url)}>
+          WebPage
+        </button>
+        <button className="prBtn" onClick={() => openNewTab(props.code)}>
+          GitHub
+        </button>
       </div>
     </div>
   );
