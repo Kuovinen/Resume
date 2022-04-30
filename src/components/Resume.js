@@ -5,16 +5,17 @@ export default function Resume(props) {
         X
       </div>
       <p id="bio">
-        Hello, my name is Roman and I'm a self taught webdeveloper. I've always
+        Hello, my name is Roman and I'm a self taught web developer. I've always
         had a love for all things programming and on this page you will find
-        both projects and information on the skill I have aquired.
+        both projects and information on the skill I have acquired in this
+        field.
       </p>
       <section id="skills">
         <ul>
           <li className="li1">
             WebDev:{" "}
             <span className="tech">
-              HTML, CSS, JAVASCRIPT, REACT, TYPESCRIPT, BOOTSTRAP, NODEJS
+              HTML, CSS, JavaScript, React, Typescript, Bootstrap, NodeJS
             </span>
           </li>
           <li className="li1">
@@ -26,10 +27,10 @@ export default function Resume(props) {
               </li>
               <li>
                 3D modeling:{" "}
-                <span className="tools">Archcad, Revit, Blender</span>
+                <span className="tools">ArchiCAD, Revit, Blender</span>
               </li>
               <li>
-                Vector drawing: <span className="tools">Autocad, Inkscape</span>
+                Vector drawing: <span className="tools">AutoCAD, Inkscape</span>
               </li>
             </ul>
           </li>
