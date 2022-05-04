@@ -9,10 +9,10 @@ import weatherMap from "../weatherMap.jpg";
 const projects = [
   <Project
     key="p1"
-    name="Restaurant expample"
+    name="Restaurant template"
     class="project"
     img={restaScreenshot}
-    using="React."
+    using="React Redux"
     hosted="Netlify"
     code="https://github.com/RomanZujev/Restaurant"
     url="https://rztaskmanager.netlify.app/"
@@ -22,7 +22,7 @@ const projects = [
     name="Task manager app"
     class="project"
     img={taskManagerScreen}
-    using="React and localstrogae."
+    using="React and localstrogae"
     hosted="Netlify"
     code="https://github.com/RomanZujev/TaskManager"
     url="https://rztaskmanager.netlify.app/"
@@ -53,10 +53,10 @@ const projects = [
   />,
   <Project
     key="p5"
-    name="Chat app"
+    name="ChatApp"
     class="projectU"
     img={chatAppScreen}
-    using="React, Redux."
+    using="React"
     hosted="FireBase"
     code="https://github.com/RomanZujev/chat-app"
     url="https://rztaskmanager.netlify.app/"
@@ -64,11 +64,12 @@ const projects = [
 
   <Project
     key="p3"
-    name="Chat app server api"
+    name="ChatApp server api"
     class="projectU"
     img={movieDBScreen}
     using="NodeJs."
     hosted="LightSale"
+    code="https://github.com/RomanZujev/chat-app/tree/main/jabi_server"
     url="https://rztaskmanager.netlify.app/"
   />,
 ];
