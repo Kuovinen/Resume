@@ -17,6 +17,10 @@ export default function Header(props) {
   function boxInterract(className) {
     document.querySelector(`.${className}`).style.display = "none";
   }
+  function boxOneInterract(className) {
+    document.querySelector(`.${className}`).style.background =
+      "var(--cp-lYellow)";
+  }
   function boxTwoReset() {
     document.querySelector(".box1-2").style.display = "block";
     document.querySelector(".box2-2").style.display = "block";
@@ -60,12 +64,42 @@ export default function Header(props) {
         <span className="slogan"> {"<<webDevelopment"}</span>
       </div>
       <div className="aniContaineOne">
-        <div className="box1"></div>
-        <div className="box2"></div>
-        <div className="box3"></div>
-        <div className="box4"></div>
-        <div className="box5"></div>
-        <div className="box6"></div>
+        <div
+          className="box1"
+          onClick={() => {
+            boxOneInterract("box1");
+          }}
+        ></div>
+        <div
+          className="box2"
+          onClick={() => {
+            boxOneInterract("box2");
+          }}
+        ></div>
+        <div
+          className="box3"
+          onClick={() => {
+            boxOneInterract("box3");
+          }}
+        ></div>
+        <div
+          className="box4"
+          onClick={() => {
+            boxOneInterract("box4");
+          }}
+        ></div>
+        <div
+          className="box5"
+          onClick={() => {
+            boxOneInterract("box5");
+          }}
+        ></div>
+        <div
+          className="box6"
+          onClick={() => {
+            boxOneInterract("box6");
+          }}
+        ></div>
       </div>
       <div className="aniContaineTwo">
         <div
