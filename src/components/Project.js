@@ -8,7 +8,7 @@ export default function Project(props) {
       <img
         className="prImg"
         onClick={() =>
-          props.name != "ChatApp server api"
+          props.name !== "ChatApp server api"
             ? openNewTab(props.url)
             : openNewTab(props.code)
         }
@@ -19,7 +19,7 @@ export default function Project(props) {
       <p className="prUsing">{props.using}</p>
       <p className="prHosted">{props.hosted}</p>
       <div className="buttons">
-        {props.name != "ChatApp server api" ? (
+        {props.name !== "ChatApp server api" ? (
           <button className="prBtn" onClick={() => openNewTab(props.url)}>
             WebPage
           </button>
