@@ -14,6 +14,16 @@ export default function Header(props) {
   function toClipboard() {
     navigator.clipboard.writeText("roman.zujev@gmail.com");
   }
+  function boxInterract(className) {
+    document.querySelector(`.${className}`).style.display = "none";
+  }
+  function boxTwoReset() {
+    document.querySelector(".box1-2").style.display = "block";
+    document.querySelector(".box2-2").style.display = "block";
+    document.querySelector(".box3-2").style.display = "block";
+    document.querySelector(".box5-2").style.display = "block";
+    document.querySelector(".box6-2").style.display = "block";
+  }
   return (
     <header>
       <div className="headContainer1">
@@ -47,7 +57,53 @@ export default function Header(props) {
       </div>
       <div className="addressContainer">
         <div className="verticalLine"></div>
-        <span className="slogan"> {"<<webDesign"}</span>
+        <span className="slogan"> {"<<webDevelopment"}</span>
+      </div>
+      <div className="aniContaineOne">
+        <div className="box1"></div>
+        <div className="box2"></div>
+        <div className="box3"></div>
+        <div className="box4"></div>
+        <div className="box5"></div>
+        <div className="box6"></div>
+      </div>
+      <div className="aniContaineTwo">
+        <div
+          className="box1-2"
+          onClick={() => {
+            boxInterract("box1-2");
+          }}
+        ></div>
+        <div
+          className="box2-2"
+          onClick={() => {
+            boxInterract("box2-2");
+          }}
+        ></div>
+        <div
+          className="box3-2"
+          onClick={() => {
+            boxInterract("box3-2");
+          }}
+        ></div>
+        <div
+          className="box4-2"
+          onClick={() => {
+            boxTwoReset();
+          }}
+        ></div>
+        <div
+          className="box5-2"
+          onClick={() => {
+            boxInterract("box5-2");
+          }}
+        ></div>
+        <div
+          className="box6-2"
+          onClick={() => {
+            boxInterract("box6-2");
+          }}
+        ></div>
       </div>
     </header>
   );
