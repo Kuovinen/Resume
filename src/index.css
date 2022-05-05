@@ -580,6 +580,9 @@ br {
   10% {
     transform: rotate(0.25turn);
   }
+  10.01% {
+    transform: rotate(0turn);
+  }
 }
 a {
   text-decoration: none;
