@@ -32,11 +32,17 @@ export default function Project(props) {
       <p className="prUsing">{props.using}</p>
 
       <div className="buttons">
-        <button className="prBtn" onClick={() => openNewTab(props.code)}>
+        <button
+          className="prBtn prBtnGit"
+          onClick={() => openNewTab(props.code)}
+        >
           GitHub
         </button>
         {props.name !== "ChatApp server api" ? (
-          <button className="prBtn" onClick={() => openNewTab(props.url)}>
+          <button
+            className="prBtn prBtnWeb"
+            onClick={() => openNewTab(props.url)}
+          >
             WebPage
           </button>
         ) : null}

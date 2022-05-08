@@ -538,7 +538,7 @@ br {
   height: 15rem;
   position: absolute;
   z-index: 20;
-  top: -3rem;
+  top: -2.5rem;
   right: 1.5rem;
   outline: 0.1rem solid var(--cp-lGrey);
   border-radius: 0.25rem;
@@ -563,21 +563,17 @@ br {
 .buttons {
   position: relative;
   width: 100%;
-  height: 5%;
   border-radius: 1vh;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  justify-content: space-around;
-  margin: 1vh 5%;
+  justify-content: space-between;
 }
 
 .prBtn {
   border: none;
-  padding: 1vh;
   background: none;
   width: 50%;
-
   font-size: 1.5rem;
   color: var(--cp-lYellow);
   display: flex;
@@ -586,7 +582,17 @@ br {
   cursor: pointer;
   color: var(--cp-lYellow);
   border-radius: 0.4rem;
-  padding: 0 1rem;
+  margin-bottom: 0.2rem;
+}
+.prBtnWeb {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+.prBtnGit {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
 }
 .prBtn:hover {
   opacity: 0.7;
