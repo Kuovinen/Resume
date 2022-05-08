@@ -4,7 +4,7 @@
   --cp-lGrey: rgb(185, 185, 185);
   --cp-dYellow: rgb(188, 154, 23);
   --cp-lYellow: rgb(207, 172, 51);
-  --cp-lGreen: rgb(7, 130, 93);
+  --cp-lGreen: rgb(11, 137, 99);
   --cp-dGreen: rgb(4, 87, 62);
   --cp-White20: rgb(255, 255, 255, 0.2);
   --cp-White50: rgb(255, 255, 255, 0.5);
@@ -399,6 +399,42 @@ li:before {
   animation-delay: 1.75s;
   animation-iteration-count: infinite;
 }
+.aniContaineThree {
+  margin-right: 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1.5vh);
+  grid-template-rows: repeat(3, 1.5vh);
+  gap: 0.5vh;
+}
+.aniContaineThree > div {
+  background-color: var(--cp-lGrey);
+  height: auto;
+  width: auto;
+  border-radius: 0.25vh;
+}
+.box1-3 {
+  grid-column: 3;
+}
+.box2-3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.box3-3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.box4-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.box5-3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.box6-3 {
+  grid-column: 3;
+  grid-row: 3;
+}
 /************************ MAIN ************************************/
 
 #main {
@@ -434,16 +470,14 @@ br {
   position: relative;
   background: var(--cp-Black);
   border-radius: 0.35rem;
-  height: 35vh;
-  min-height: 15rem;
+  height: 37vh;
+  min-height: 17rem;
   min-width: 25rem;
   color: var(--cp-Black);
   font-size: 2vh;
-
   border: 0.1rem solid var(--cp-dGreen);
   border-top: 2rem solid var(--cp-dGreen);
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 .project:hover,
@@ -452,25 +486,31 @@ br {
 }
 .project:hover > .prImg,
 .projectU:hover > .prImg {
-  outline: 0.2rem solid white;
+  outline: 0.2rem solid var(--cp-lGrey);
 }
 .prUsing {
   color: var(--cp-lGreen);
-  padding: 0.2rem 0.5rem;
-  height: 30%;
-  width: 90%;
+  margin: 1rem 1rem;
+  height: 40%;
+  width: 52%;
   position: relative;
-  top: -1rem;
-  font-size: 1rem;
+
+  font-size: 1.3rem;
 }
 .prHosted {
-  color: var(--cp-lGreen);
+  color: var(--cp-Black);
   padding: 0rem 0.5rem;
-  height: 5%;
+  height: 2rem;
   width: 90%;
   position: relative;
-  top: -1rem;
-  font-size: 1rem;
+  left: -0.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: var(--cp-lGrey);
 }
 .prUsing::before {
   content: "Using: ";
@@ -484,49 +524,46 @@ br {
   content: "WIP";
   position: absolute;
   font-weight: 600;
-  font-size: 0.8rem;
-  right: 0.5rem;
-  top: 1rem;
+  font-size: 1rem;
+  left: 0.5rem;
+  top: -1.8rem;
   color: var(--cp-Black);
   background-color: var(--cp-lGrey);
   border-radius: 0.4rem;
   padding: 0.2rem;
 }
+
 .prImg {
-  width: 15rem;
-  height: 7rem;
-  object-fit: fill;
-  position: relative;
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  z-index: 20;
   top: -3rem;
+  right: 1.5rem;
   outline: 0.1rem solid var(--cp-lGrey);
   border-radius: 0.25rem;
   cursor: pointer;
 }
+.titleContainer {
+  height: 30%;
+  width: 100%;
 
-.projectTitle {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  z-index: 2;
-
-  height: 10%;
-  width: 103%;
+}
+.projectTitle {
   font-size: 1.25rem;
-  position: relative;
-  top: -2rem;
   font-weight: 1000;
-  color: var(--cp-Black);
+  color: var(--cp-lGrey);
   border-radius: 0.25rem;
-  background: var(--cp-lGrey);
+  margin: 0 1rem;
 }
-.projectTitle::before,
-.projectTitle::after {
-  content: "∙";
-}
+
 .buttons {
   position: relative;
-  width: calc(100% - 2vw);
-  height: 10%;
+  width: 100%;
+  height: 5%;
   border-radius: 1vh;
   display: flex;
   justify-content: center;
@@ -538,7 +575,7 @@ br {
 .prBtn {
   border: none;
   padding: 1vh;
-  background: var(--cp-Black);
+  background: none;
   width: 50%;
 
   font-size: 1.5rem;
@@ -588,7 +625,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 620px) {
   .addressContainer {
     display: none;
   }

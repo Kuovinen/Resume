@@ -12,17 +12,17 @@ const projects = [
     name="Restaurant template"
     class="project"
     img={restaScreenshot}
-    using="React Redux SessionStorage"
+    using="React, Redux, SessionStorage"
     hosted="Netlify"
     code="https://github.com/RomanZujev/Restaurant"
     url="https://rztaskmanager.netlify.app/"
   />,
   <Project
     key="p2"
-    name="Task manager app"
+    name="Task manager"
     class="project"
     img={taskManagerScreen}
-    using="React and localstorage"
+    using="React and LocalStorage"
     hosted="Netlify"
     code="https://github.com/RomanZujev/TaskManager"
     url="https://rztaskmanager.netlify.app/"

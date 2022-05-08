@@ -15,18 +15,31 @@ export default function Project(props) {
         src={props.img}
         alt={props.name + " img"}
       />
-      <div className="projectTitle">{props.name}</div>
-      <p className="prUsing">{props.using}</p>
+
+      <div className="titleContainer">
+        <div className="projectTitle">{props.name}</div>
+        <div className="aniContaineThree">
+          <div className="box1-3"></div>
+          <div className="box2-3"></div>
+          <div className="box3-3"></div>
+          <div className="box4-3"></div>
+          <div className="box5-3"></div>
+          <div className="box6-3"></div>
+        </div>
+      </div>
+
       <p className="prHosted">{props.hosted}</p>
+      <p className="prUsing">{props.using}</p>
+
       <div className="buttons">
+        <button className="prBtn" onClick={() => openNewTab(props.code)}>
+          GitHub
+        </button>
         {props.name !== "ChatApp server api" ? (
           <button className="prBtn" onClick={() => openNewTab(props.url)}>
             WebPage
           </button>
         ) : null}
-        <button className="prBtn" onClick={() => openNewTab(props.code)}>
-          GitHub
-        </button>
       </div>
     </div>
   );
