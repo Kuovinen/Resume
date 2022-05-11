@@ -15,7 +15,7 @@ const projects = [
     using="React, Redux, SessionStorage"
     hosted="Netlify"
     code="https://github.com/RomanZujev/Restaurant"
-    url="https://rztaskmanager.netlify.app/"
+    url="https://restlacasa.netlify.app/"
   />,
   <Project
     key="p2"
@@ -48,7 +48,7 @@ const projects = [
     img={cookbookDBScreen}
     using="pure JavaScript"
     hosted="FireBase"
-    code="https://github.com/RomanZujev/CookBook"
+    code="https://github.com/RomanZujev/CookBook/tree/portfolio"
     url="https://zrcookbook.firebaseapp.com/"
   />,
   <Project
