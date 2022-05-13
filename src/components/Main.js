@@ -6,6 +6,8 @@ import cookbookDBScreen from "../cookbookDBScreen.jpg";
 import movieDBScreen from "../movieDBScreen.jpg";
 import taskManagerScreen from "../taskManagerScreen.jpg";
 import weatherMap from "../weatherMap.jpg";
+import colorTools from "../colorTools.jpg";
+
 const projects = [
   <Project
     key="p1"
@@ -40,6 +42,16 @@ const projects = [
     hosted="Netlify"
     code="https://github.com/RomanZujev/weathermap"
     url="https://rztaskmanager.netlify.app/"
+  />,
+  <Project
+    key="p4.1"
+    name="ColorTools"
+    class="project"
+    img={colorTools}
+    using="pure JavaScript"
+    hosted="FireBase"
+    code="https://github.com/RomanZujev/ColorTools"
+    url="https://rzcolortools.firebaseapp.com/"
   />,
   <Project
     key="p4"
