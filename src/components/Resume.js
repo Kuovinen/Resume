@@ -15,7 +15,8 @@ export default function Resume(props) {
           <li className="li1">
             WebDev:{" "}
             <span className="tech">
-              HTML, CSS, JavaScript, React, Redux, Typescript, Bootstrap, NodeJS
+              HTML, CSS, JavaScript, React, Redux, Typescript, Bootstrap,
+              NodeJS, SQL
             </span>
           </li>
           <li className="li1">
@@ -30,7 +31,8 @@ export default function Resume(props) {
                 <span className="tools">ArchiCAD, Revit, Blender</span>
               </li>
               <li>
-                Vector drawing: <span className="tools">AutoCAD, Inkscape</span>
+                Vector drawing:{" "}
+                <span className="tools">Figma, AutoCAD, Inkscape</span>
               </li>
             </ul>
           </li>
