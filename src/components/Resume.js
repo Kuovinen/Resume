@@ -7,7 +7,7 @@ export default function Resume(props) {
       <p id="bio">
         Hello, my name is Roman and I'm a self taught web developer. I've always
         had a love for all things programming and on this page you will find
-        both projects and information on the skill I have acquired in this
+        both projects and information on the skills I have acquired in this
         field.
       </p>
       <section id="skills">
