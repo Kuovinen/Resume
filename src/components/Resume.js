@@ -15,8 +15,7 @@ export default function Resume(props) {
           <li className="li1">
             WebDev:{" "}
             <span className="tech">
-              HTML, CSS, JavaScript, React, Redux, Typescript, Bootstrap,
-              NodeJS, SQL
+              HTML, CSS, JavaScript, React, Redux, Bootstrap, NodeJS, SQL
             </span>
           </li>
           <li className="li1">
