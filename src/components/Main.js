@@ -41,7 +41,7 @@ const projects = [
     Bootstrap "
     hosted="Netlify"
     code="https://github.com/RomanZujev/weathermap"
-    url="https://rztaskmanager.netlify.app/"
+    url="https://rzweathermap.netlify.app/"
   />,
   <Project
     key="p4.1"
