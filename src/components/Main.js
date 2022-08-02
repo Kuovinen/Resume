@@ -80,7 +80,7 @@ const projects = [
     class="projectU"
     img={chatAppScreen}
     using="React, TypeScript"
-    hosted="FireBase"
+    hosted="Not yet"
     code="https://github.com/RomanZujev/chat-app"
     url="https://github.com/RomanZujev/chat-app"
   />,
@@ -91,7 +91,7 @@ const projects = [
     class="projectU"
     img={movieDBScreen}
     using="NodeJs, WebSockets"
-    hosted="LightSale"
+    hosted="Not yet"
     code="https://github.com/RomanZujev/chat-app/tree/main/jabi_server"
     url="https://github.com/RomanZujev/chat-app/tree/main/jabi_server"
   />,
