@@ -1,3 +1,8 @@
-# Personal portfolio page.
+# ∙Personal portfolio page∙
 
-Links to projects, github and wordpress blog.
+Written in JavaScript using React.
+
+To run locally :
+∙ npm start (inside the root directory)
+
+Links to projects, github.
