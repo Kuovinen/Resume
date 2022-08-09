@@ -39,7 +39,7 @@ const projects = [
     class="project"
     img={noteTaker}
     using="TypeScript, React, Express.js, MongoDb"
-    hosted="Netlify AWS and Atlas"
+    hosted="AWS & Netlify"
     code="https://github.com/RomanZujev/rnotes"
     url="https://rznotes.netlify.app/"
   />,
