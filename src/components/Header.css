@@ -7,6 +7,17 @@ h1 {
 }
 .letterO {
   color: var(--cp-dYellow);
+  animation-name: unyellow;
+  animation-duration: 0.3s;
+}
+
+@keyframes unyellow {
+  0% {
+    color: var(--cp-lYellow);
+  }
+  100% {
+    color: var(--cp-dYellow);
+  }
 }
 .firstName {
   position: relative;

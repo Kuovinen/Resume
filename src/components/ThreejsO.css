@@ -1,0 +1,12 @@
+#r3f {
+  animation-name: unhide;
+  animation-duration: 0.2s;
+}
+@keyframes unhide {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

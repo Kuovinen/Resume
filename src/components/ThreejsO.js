@@ -1,4 +1,5 @@
 import React from "react";
+import "./ThreejsO.css";
 import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
@@ -160,11 +161,11 @@ export default function App() {
   const sway = React.useRef(0);
   return (
     <div
+      id="r3f"
       className="dic"
       style={{
         height: "300%",
         width: "300%",
-        display: "inline-block",
         position: "absolute",
         top: "-57%",
         left: "-120.5%",
