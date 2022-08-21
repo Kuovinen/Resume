@@ -10,6 +10,7 @@ h1 {
 }
 .firstName {
   position: relative;
+  width: fit-content;
 }
 .nameLetters {
   font-size: 100%;
@@ -58,6 +59,7 @@ h1 {
   font-size: 5vh;
   line-height: 4vh;
   user-select: none;
+  color: var(--cp-lGrey);
 }
 .topic:visited,
 .topic:focus {
