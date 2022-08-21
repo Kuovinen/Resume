@@ -4,6 +4,7 @@ import linkedIn from "../linkedin.svg";
 import email from "../email.svg";
 import at from "../at.svg";
 import scrollDown from "./handlers.js";
+import ThreeejsO from "./ThreejsO.js";
 export default function Header(props) {
   function openGit() {
     window.open("https://github.com/RomanZujev", "_blank");
@@ -32,7 +33,12 @@ export default function Header(props) {
     <header>
       <div className="headContainer1">
         <h1>
-          <div className="firstName">ROMAN</div>
+          <div className="firstName">
+            <span>R</span>
+            <ThreeejsO />
+            <span className="letterO">O</span>
+            <span>MAN</span>
+          </div>
           <div className="lastName">ZUJEV</div>
         </h1>
         <span id="copyAddd">click to copy address ↓</span>
