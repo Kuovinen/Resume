@@ -4,7 +4,6 @@ import Main from "./components/Main.js";
 import Header from "./components/Header.js";
 import Resume from "./components/Resume.js";
 import Contact from "./components/Contact.js";
-import scrollDown from "./components/handlers.js";
 
 function App() {
   let [resumeVisibility, setResumeVisibility] = useState("none");
@@ -43,7 +42,11 @@ function App() {
       <Resume handler={toggleResume} visibility={resumeVisibility} />
       <Contact handler={toggleContact} visibility={contactVisibility} />
       <br />
-      <div className="arrow" onClick={scrollDown}></div>
+
+      <a href="#projectLogo">
+        <div className="arrow"></div>
+      </a>
+
       <br />
       <Main key="main" />
     </div>

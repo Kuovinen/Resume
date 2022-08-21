@@ -8,17 +8,9 @@ import taskManagerScreen from "../taskManagerScreen.jpg";
 import weatherMap from "../weatherMap.jpg";
 import colorTools from "../colorTools.jpg";
 import noteTaker from "../noteTaker.jpg";
+import "./Main.css";
+
 const projects = [
-  <Project
-    key="p1"
-    name="Restaurant template"
-    class="project"
-    img={restaScreenshot}
-    using="React, Redux, Sass, SessionStorage"
-    hosted="Netlify"
-    code="https://github.com/RomanZujev/Restaurant"
-    url="https://restlacasa.netlify.app/"
-  />,
   <Project
     key="p2"
     name=" Weather report"
@@ -42,6 +34,16 @@ const projects = [
     hosted="AWS & Netlify"
     code="https://github.com/RomanZujev/rnotes"
     url="https://rznotes.netlify.app/"
+  />,
+  <Project
+    key="p1"
+    name="Restaurant template"
+    class="project"
+    img={restaScreenshot}
+    using="React, Redux, Sass, SessionStorage"
+    hosted="Netlify"
+    code="https://github.com/RomanZujev/Restaurant"
+    url="https://restlacasa.netlify.app/"
   />,
   <Project
     key="p4"

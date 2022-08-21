@@ -1,10 +1,13 @@
 import Topic from "./Topic.js";
+import Topic2 from "./Topic2.js";
 import git from "../git.svg";
 import linkedIn from "../linkedin.svg";
 import email from "../email.svg";
 import at from "../at.svg";
-import scrollDown from "./handlers.js";
+
 import ThreeejsO from "./ThreejsO.js";
+import "./Header.css";
+
 export default function Header(props) {
   function openGit() {
     window.open("https://github.com/RomanZujev", "_blank");
@@ -34,10 +37,10 @@ export default function Header(props) {
       <div className="headContainer1">
         <h1>
           <div className="firstName">
-            <span>R</span>
+            <span className="nameLetters">R</span>
             <ThreeejsO />
-            <span className="letterO">O</span>
-            <span>MAN</span>
+            <span className="letterO nameLetters">O</span>
+            <span className="nameLetters">MAN</span>
           </div>
           <div className="lastName">ZUJEV</div>
         </h1>
@@ -48,7 +51,7 @@ export default function Header(props) {
       </div>
       <div className="divider"></div>
       <div className="headContainer2">
-        <Topic key="t2" name="Projects" eventHandler={scrollDown} />
+        <Topic2 key="t2" name="Projects" />
         <Topic key="t3" name="Contact" eventHandler={props.contactHandler} />
         <Topic key="t1" name="Resume" eventHandler={props.resumeHandler} />
 

@@ -1,3 +1,4 @@
+import "./Resume.css";
 export default function Resume(props) {
   return (
     <div id="resume" style={{ display: props.visibility }}>

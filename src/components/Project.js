@@ -1,3 +1,4 @@
+import "./Project.css";
 export default function Project(props) {
   function openNewTab(target) {
     window.open(target, "_blank");
