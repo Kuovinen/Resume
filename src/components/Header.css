@@ -1,3 +1,18 @@
+header {
+  animation-name: unhide;
+  animation-duration: 0.7s;
+}
+@keyframes unhide {
+  0% {
+    visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 h1 {
   color: var(--cp-lYellow);
   font-size: 10vh;
@@ -11,14 +26,6 @@ h1 {
   animation-duration: 0.5s;
 }
 
-@keyframes unyellow {
-  0% {
-    color: var(--cp-lYellow);
-  }
-  100% {
-    color: var(--cp-dYellow);
-  }
-}
 .firstName {
   position: relative;
   width: fit-content;

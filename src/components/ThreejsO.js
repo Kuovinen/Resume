@@ -1,5 +1,4 @@
-import React from "react";
-import "./ThreejsO.css";
+import React, { useEffect } from "react";
 import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
@@ -14,11 +13,16 @@ function Text(props) {
   const font = new FontLoader().parse(arialFont);
   const txtOptions = { font: font, size: 0.5, height: 0.1 };
   const containerObject = React.useRef(null);
-
+  useEffect(() => {
+    setTimeout(() => {
+      sway.current = 0;
+    }, 700);
+  });
   /*////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////LETTER ANIMATION*/
   function ani(pivot) {
     const aplitude = Math.PI / 20;
+
     if (sway.current === 0 || sway.current === 2) {
       if (pivot.rotation.z < aplitude) {
         pivot.rotation.z += sway.current === 1 ? 0.01 : 0.03;
@@ -158,7 +162,7 @@ function Particles(props) {
   );
 }
 export default function App() {
-  const sway = React.useRef(0);
+  const sway = React.useRef(-1); //changed to -1
   return (
     <div
       id="r3f"
