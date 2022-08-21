@@ -88,7 +88,7 @@ function Particles(props) {
   const count = 20;
   const dimensions = 3;
   //references
-  const leftGeometry = React.useRef(null);
+  //const leftGeometry = React.useRef(null);
   const prtclBufferGeometry = React.useRef(null);
   const parMat = React.useRef(null);
   const particleTime = React.useRef(0);
@@ -145,7 +145,7 @@ function Particles(props) {
       parMat.current.opacity = 1;
       sway.current = 6;
     }
-    if (prtclBufferGeometry.current !== undefined && sway.current == 6) {
+    if (prtclBufferGeometry.current !== undefined && sway.current === 6) {
       moveParticles(prtclBufferGeometry);
     }
   });
