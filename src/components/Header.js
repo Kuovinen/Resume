@@ -5,7 +5,7 @@ import linkedIn from "../linkedin.svg";
 import email from "../email.svg";
 import at from "../at.svg";
 
-import ThreeejsO from "./ThreejsO.js";
+//import ThreeejsO from "./ThreejsO.js";
 import "./Header.css";
 
 export default function Header(props) {
