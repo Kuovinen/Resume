@@ -162,12 +162,13 @@ export default function App() {
     <div
       className="dic"
       style={{
-        height: "12rem",
-        width: "20rem",
+        height: "300%",
+        width: "300%",
         display: "inline-block",
         position: "absolute",
-        top: "-2.4rem",
-        left: "-4.8rem",
+        top: "-57%",
+        left: "-120.5%",
+        pointerEvents: "none",
       }}
     >
       <Canvas camera={{ position: [0, 0, 1.1] }}>
