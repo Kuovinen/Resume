@@ -1,0 +1,295 @@
+h1 {
+  color: var(--cp-lYellow);
+  font-size: 10vh;
+  line-height: 8vh;
+  flex: 1;
+  text-align: end;
+}
+.letterO {
+  color: var(--cp-dYellow);
+}
+.firstName {
+  position: relative;
+}
+.nameLetters {
+  font-size: 100%;
+}
+.lastName {
+  margin-top: 0.1rem;
+  letter-spacing: 1vh;
+}
+.iconsContainer {
+  display: flex;
+
+  align-items: center;
+}
+.icon1,
+.icon2,
+.icon3 {
+  height: 6vh;
+  width: fit-content;
+  user-select: none;
+  cursor: pointer;
+  margin-left: 0.7rem;
+}
+.icon1 {
+  height: 4.7vh;
+}
+.icon3 {
+  height: 5vh;
+}
+.icon4 {
+  display: inline;
+  height: 1rem;
+}
+.icon1:hover,
+.icon2:hover,
+.icon3:hover {
+  filter: invert(76%) sepia(5%) saturate(6300%) hue-rotate(4deg)
+    brightness(178%) contrast(70%);
+  /* filter: invert(39%) sepia(8%) saturate(2524%) hue-rotate(42deg)
+      brightness(94%) contrast(88%);*/
+  transition: 0.5s;
+}
+.divider {
+  border-left: 0.3rem solid var(--cp-lGrey);
+}
+.topic {
+  font-size: 5vh;
+  line-height: 4vh;
+  user-select: none;
+}
+.topic:visited,
+.topic:focus {
+  text-decoration: none;
+  color: var(--cp-lGrey);
+}
+.topic:before {
+  content: "/";
+  display: relative;
+  top: -5vh;
+  color: var(--cp-lGreen);
+}
+.topic:hover::before {
+  content: "//";
+  color: var(--cp-lGreen);
+}
+.topic:hover {
+  cursor: pointer;
+  color: var(--cp-lGreen);
+}
+header {
+  display: flex;
+  gap: 1vh;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+
+  margin-top: 10vh;
+  margin-bottom: 45vh;
+  position: relative;
+}
+.headContainer1,
+.headContainer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+.headContainer1 {
+  width: fit-content;
+  gap: 0rem;
+  align-items: flex-end;
+}
+
+.addressContainer {
+  position: absolute;
+  top: 0vh;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.aniContaineOne {
+  position: absolute;
+  top: -5rem;
+  right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2vh);
+  grid-template-rows: repeat(3, 2vh);
+  gap: 1vh;
+}
+.aniContaineOne > div {
+  background-color: var(--cp-lGrey);
+  height: auto;
+  width: auto;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+.box1 {
+  grid-column: 1;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.box2 {
+  grid-column: 2;
+}
+.box3 {
+  grid-column: 3;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 0.25s;
+  animation-iteration-count: infinite;
+}
+.box4 {
+  grid-column: 2;
+  grid-row: 2;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.box5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.box6 {
+  grid-column: 3;
+  grid-row: 3;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 0.75s;
+  animation-iteration-count: infinite;
+}
+.aniContaineTwo {
+  position: absolute;
+  bottom: -50vh;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 4vh);
+  grid-template-rows: repeat(3, 4vh);
+  gap: 1vh;
+}
+.aniContaineTwo > div {
+  background-color: var(--cp-lGrey);
+  height: auto;
+  width: auto;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+
+.aniContaineTwo > div:hover {
+  filter: invert(76%) sepia(5%) saturate(6300%) hue-rotate(4deg)
+    brightness(178%) contrast(70%);
+}
+.box1-2 {
+  grid-column: 1;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.box2-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.box3-2 {
+  grid-column: 2;
+  grid-row: 2;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 1.25s;
+  animation-iteration-count: infinite;
+}
+.box4-2 {
+  grid-column: 1;
+  grid-row: 3;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+}
+.box5-2 {
+  grid-column: 2;
+  grid-row: 3;
+  animation-name: blink2;
+  animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+}
+.box6-2 {
+  grid-column: 3;
+  grid-row: 3;
+  animation-name: blink1;
+  animation-duration: 4s;
+  animation-delay: 1.75s;
+  animation-iteration-count: infinite;
+}
+.aniContaineThree {
+  margin-right: 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1.5vh);
+  grid-template-rows: repeat(3, 1.5vh);
+  gap: 0.5vh;
+}
+.aniContaineThree > div {
+  background-color: var(--cp-lGrey);
+  height: auto;
+  width: auto;
+  border-radius: 0.25vh;
+}
+.box1-3 {
+  grid-column: 3;
+}
+.box2-3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.box3-3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.box4-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.box5-3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.box6-3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+@keyframes blink1 {
+  0% {
+    opacity: 0.25;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+@keyframes blink2 {
+  0% {
+    transform: rotate(0turn);
+  }
+  10% {
+    transform: rotate(0.25turn);
+  }
+  10.01% {
+    transform: rotate(0turn);
+  }
+}
+.address {
+  color: var(--cp-lYellow);
+  background: none;
+  border: none;
+  font-size: 3vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.address:hover {
+  opacity: 0.85;
+}

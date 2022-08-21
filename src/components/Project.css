@@ -1,0 +1,98 @@
+.prImg {
+  width: 10rem;
+  height: 15rem;
+  position: absolute;
+  z-index: 20;
+  top: -2.5rem;
+  right: 1.5rem;
+  outline: 0.1rem solid var(--cp-lGrey);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.prUsing {
+  color: var(--cp-lGreen);
+  margin: 1rem 1rem;
+  height: 40%;
+  width: 52%;
+  position: relative;
+
+  font-size: 1.3rem;
+}
+.prHosted {
+  color: var(--cp-Black);
+  padding: 0rem 0.5rem;
+  height: 2rem;
+  width: 90%;
+  position: relative;
+  left: -0.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: var(--cp-lGrey);
+}
+.prUsing::before {
+  content: "Using: ";
+  font-weight: 600;
+}
+.prHosted::before {
+  content: "Hosted on: ";
+  font-weight: 600;
+}
+.projectU:before {
+  content: "WIP";
+  position: absolute;
+  font-weight: 600;
+  font-size: 1rem;
+  left: 0.5rem;
+  top: -1.8rem;
+  color: var(--cp-Black);
+  background-color: var(--cp-lGrey);
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.titleContainer {
+  height: 30%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 1000;
+  color: var(--cp-lGrey);
+  border-radius: 0.25rem;
+  margin: 0 1rem;
+}
+.prBtn {
+  border: none;
+  background: none;
+  width: 50%;
+  font-size: 1.5rem;
+  color: var(--cp-lYellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--cp-lYellow);
+  border-radius: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+.prBtnWeb {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+.prBtnGit {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+.prBtn:hover {
+  opacity: 0.7;
+}
