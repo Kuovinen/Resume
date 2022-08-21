@@ -38,7 +38,7 @@ export default function Header(props) {
         <h1>
           <div className="firstName">
             <span className="nameLetters">R</span>
-            <ThreeejsO />
+            {/*<ThreeejsO />*/}
             <span className="letterO nameLetters">O</span>
             <span className="nameLetters">MAN</span>
           </div>

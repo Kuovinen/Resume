@@ -21,7 +21,7 @@ h1 {
   text-align: end;
 }
 .letterO {
-  color: var(--cp-dYellow);
+  color: var(--cp-lYellow);
   animation-name: unyellow;
   animation-duration: 0.5s;
 }
