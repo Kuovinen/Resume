@@ -1,0 +1,57 @@
+@use "App.scss";
+@use "./components/Header.scss";
+@use "./components/Resume.scss";
+@use "./components/Footer.scss";
+@use "./components/Projects.scss";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,600;1,900&display=swap");
+:root {
+  --c-Black: rgb(18, 18, 18);
+  --c-dGrey: rgb(38, 35, 38);
+  --c-lGrey: rgb(185, 185, 185);
+  --c-dYellow: rgb(67, 55, 3);
+  --c-lYellow: rgb(207, 172, 51);
+  --c-lGreen: rgb(11, 137, 99);
+  --c-dGreen: rgb(4, 87, 62);
+  --c-White20: rgb(255, 255, 255, 0.2);
+  --c-White50: rgb(255, 255, 255, 0.5);
+  --c-White70: rgb(255, 255, 255, 0.7);
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  user-select: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 620px) {
+  .addressContainer {
+    display: none;
+  }
+  .slogan {
+    display: none;
+  }
+  h1 {
+    font-size: 16vw;
+  }
+}
+@media (max-height: 660px) {
+  h1 {
+    font-size: 10vh;
+  }
+}
+@media (max-width: 730px) {
+}
+@media (max-width: 712) {
+  .project,
+  .projectU {
+    width: 100%;
+  }
+}

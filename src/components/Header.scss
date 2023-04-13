@@ -1,0 +1,75 @@
+@use "../_mixins.scss" as m;
+header {
+  padding-top: 1rem;
+  gap: 1rem;
+  width: 100vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.firstName {
+  white-space: nowrap;
+}
+.containerLeft {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.containerRight {
+  position: relative;
+}
+
+.firstName {
+  @include m.font2(5rem);
+}
+.resumeP {
+  margin-left: 1rem;
+}
+.containerRight > p::before {
+  content: "/";
+  font-size: 2rem;
+}
+.containerRight > p {
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+}
+.firstName {
+  width: fit-content;
+  position: relative;
+  animation: moveToCenter 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  line-height: 0.75;
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-9deg, 0deg);
+}
+
+.containerRight > p {
+  width: 10rem;
+  cursor: pointer;
+  display: flex;
+  line-height: 1;
+}
+
+.containerRight > p:hover::before {
+  content: "///";
+}
+.containerRight > p > span:hover {
+  transition: 0.3s;
+  opacity: 0.4;
+}
+.firstName > span:hover {
+  transition: 0.3s;
+  opacity: 0.3;
+}
+@keyframes moveToCenter {
+  0% {
+    right: 300px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}

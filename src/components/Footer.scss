@@ -1,0 +1,23 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: end;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.svgicon {
+  filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
+    brightness(100%) contrast(84%);
+  position: relative;
+}
+.svgicon {
+  display: inline-block;
+}
+.svgicon:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,16 @@
+@mixin font0($size) {
+  font-family: "Exo 2";
+  font-weight: 300;
+  font-size: $size;
+}
+@mixin font1($size) {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: $size;
+}
+@mixin font2($size) {
+  font-family: "Exo 2";
+  font-weight: 900;
+  font-style: italic;
+  font-size: $size;
+}

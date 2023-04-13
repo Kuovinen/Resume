@@ -1,54 +1,23 @@
-import React, { useState } from "react";
-
-import Main from "./components/Main.js";
-import Header from "./components/Header.js";
-import Resume from "./components/Resume.js";
-import Contact from "./components/Contact.js";
-
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 function App() {
-  let [resumeVisibility, setResumeVisibility] = useState("none");
-  function toggleResume() {
-    //Hide RESUME if shown. Otherwise show RESUME, but also close CONTACT.
-    if (resumeVisibility === "block") {
-      setResumeVisibility("none");
-    } else {
-      if (contactVisibility === "grid") {
-        setContactVisibility("none");
-      }
-      setResumeVisibility("block");
-    }
-  }
-  let [contactVisibility, setContactVisibility] = useState("none");
-  function toggleContact() {
-    //Hide CONTACT if shown. Otherwise show CONTAT, but also close RESUME.
-    if (contactVisibility === "grid") {
-      setContactVisibility("none");
-    } else {
-      if (resumeVisibility === "block") {
-        setResumeVisibility("none");
-      }
-      setContactVisibility("grid");
-    }
-  }
+  const resumeContainerElRef = React.useRef(<div></div>);
 
   return (
     <div className="App">
-      <br />
-      <Header
-        key="header"
-        resumeHandler={toggleResume}
-        contactHandler={toggleContact}
-      />
-      <Resume handler={toggleResume} visibility={resumeVisibility} />
-      <Contact handler={toggleContact} visibility={contactVisibility} />
-      <br />
+      <div className="overlay1">
+        <div className="overlay2"></div>
+      </div>
+      <Header resRef={resumeContainerElRef} />
+      <main>
+        <Resume resRef={resumeContainerElRef} />
+        <Projects />
+      </main>
 
-      <a href="#projectLogo">
-        <div className="arrow"></div>
-      </a>
-
-      <br />
-      <Main key="main" />
+      <Footer />
     </div>
   );
 }
