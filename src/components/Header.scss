@@ -37,14 +37,47 @@ header {
 .firstName {
   width: fit-content;
   position: relative;
-  animation: moveToCenter 1s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
+  animation: moveToCenter 1s forwards 4s;
   opacity: 0;
   line-height: 0.75;
-  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-9deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
 }
-
+.fn1 {
+  animation: yellowUp 0.25s forwards 5.5s;
+}
+.fn2 {
+  animation: yellowUp 0.25s forwards 5.6s;
+}
+.fn3 {
+  animation: yellowUp 0.25s forwards 5.7s;
+}
+.fn4 {
+  animation: yellowUp 0.25s forwards 5.8s;
+}
+.fn5 {
+  animation: yellowUp 0.25s forwards 5.9s;
+}
+.fn6 {
+  animation: yellowUp 0.25s forwards 6s;
+}
+.fn7 {
+  animation: yellowUp 0.25s forwards 6.1s;
+}
+.fn8 {
+  animation: yellowUp 0.25s forwards 6.2s;
+}
+.fn9 {
+  animation: yellowUp 0.25s forwards 6.3s;
+}
+.fn10 {
+  animation: yellowUp 0.25s forwards 6.4s;
+}
+.fn11 {
+  animation: yellowUp 0.25s forwards 6.5s;
+}
+.fn12 {
+  animation: yellowUp 0.25s forwards 6.6s;
+}
 .containerRight > p {
   width: 10rem;
   cursor: pointer;
@@ -71,5 +104,13 @@ header {
   100% {
     right: 0px;
     opacity: 1;
+  }
+}
+@keyframes yellowUp {
+  0% {
+    color: var(--c-lGrey);
+  }
+  100% {
+    color: var(--c-lYellow);
   }
 }

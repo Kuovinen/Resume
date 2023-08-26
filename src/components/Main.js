@@ -8,7 +8,6 @@ import taskManagerScreen from "../taskManagerScreen.jpg";
 import weatherMap from "../weatherMap.jpg";
 import colorTools from "../colorTools.jpg";
 import noteTaker from "../noteTaker.jpg";
-import "./Main.css";
 
 const projects = [
   <Project
@@ -104,7 +103,7 @@ export default function Main() {
     <div id="main">
       <span id="projectLogo">PROJECTS</span>
       <br />
-      <div className="projectsContainer">{projects}</div>
+      <div className="projectsContainer">{"string"}</div>
     </div>
   );
 }

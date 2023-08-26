@@ -1,14 +1,17 @@
 @use "App.scss";
 @use "./components/Header.scss";
 @use "./components/Resume.scss";
+@use "./components/Contact.scss";
 @use "./components/Footer.scss";
 @use "./components/Projects.scss";
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,600;1,900&display=swap");
 :root {
   --c-Black: rgb(18, 18, 18);
+  --c-Darker: rgba(0, 0, 0, 0.2);
   --c-dGrey: rgb(38, 35, 38);
+  --c-mGrey: rgb(92, 88, 92);
   --c-lGrey: rgb(185, 185, 185);
-  --c-dYellow: rgb(67, 55, 3);
+  --c-dYellow: rgb(107, 93, 29);
   --c-lYellow: rgb(207, 172, 51);
   --c-lGreen: rgb(11, 137, 99);
   --c-dGreen: rgb(4, 87, 62);

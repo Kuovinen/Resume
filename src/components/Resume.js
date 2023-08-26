@@ -1,20 +1,19 @@
 export default function Resume(props) {
   function hideResume() {
-    props.resRef.current.className = "resumeContainer";
+    props.resRef.current.className = "hiddenContainer";
   }
   return (
     <div
-      className="resumeContainer"
+      className="hiddenContainer"
       ref={props.resRef}
       onClick={() => hideResume()}
     >
-      {/*`<button className="closer" onClick={props.handler}>close</button>`*/}
       <div className="content">
         <p id="bio">
-          Hello, my name is Roman and I'm a self taught web developer. I've
-          always had a love for all things programming and on this page you will
-          find both projects and information on the skills I have acquired in
-          this field.
+          Hello, my name is Emil R. Kuovinen and I'm a self taught web
+          developer. I've always had a love for all things programming and on
+          this page you will find both projects and information on the skills I
+          have acquired in this field.
         </p>
         <section id="skills">
           Skills:
@@ -34,7 +33,7 @@ export default function Resume(props) {
               </span>
             </li>
             <li className="li1">
-              Full stack: <span className="tech"> Azure, Docker, AWS, Git</span>
+              Full stack: <span className="tech"> Azure, AWS, Docker, Git</span>
             </li>
           </ul>
         </section>

@@ -1,0 +1,67 @@
+//THE MAIN CONTAINER LOGIC IS IN THE APP SCSS, THESE ARE JUST SUPLIMENTS
+@use "../_mixins.scss" as m;
+.closeButton {
+  position: absolute;
+  content: "X";
+  cursor: pointer;
+  font-weight: 1000;
+  font-size: 2rem;
+  top: 1rem;
+  right: 50%;
+  transform: translateX(2300%);
+  color: var(--c-lYellow);
+}
+#form {
+  display: flex;
+  gap: 2vh;
+  padding: 1.5vh;
+  flex-direction: column;
+  min-width: 50rem;
+  height: 40rem;
+  justify-content: flex-start;
+}
+input,
+textarea {
+  @include m.font0(2rem);
+  color: var(--c-lGrey);
+  background: var(--c-Darker);
+  border: none;
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 2vh;
+  flex: 1;
+}
+textarea {
+  resize: none;
+  flex: 3;
+}
+input:-webkit-autofill {
+  background: var(--c-Darker);
+}
+.fInput:focus,
+#form > textarea {
+  border: none;
+  outline: none;
+}
+.fInput::placeholder,
+#form > textarea::placeholder {
+  color: var(--c-mGrey);
+}
+.fInput:placeholder-shown {
+  vertical-align: top;
+}
+#sendBtn {
+  background: none;
+  cursor: pointer;
+  border: 0.1rem solid var(--c-lGrey);
+}
+#sendBtn:active {
+  transform: scale(0.99);
+}
+.darkBtn {
+  color: var(--c-dYellow);
+}
+.brightBtn {
+  color: var(--c-lYellow);
+  @include m.font1(2rem);
+}
