@@ -88,13 +88,13 @@ header {
 .containerRight > p:hover::before {
   content: "///";
 }
-.containerRight > p > span:hover {
-  transition: 0.3s;
-  opacity: 0.4;
-}
+// .containerRight > p > span:hover {
+//   transition: 0.3s;
+//   opacity: 0.4;
+// }
 .firstName > span:hover {
   transition: 0.3s;
-  opacity: 0.3;
+  filter: brightness(1.5);
 }
 @keyframes moveToCenter {
   0% {
