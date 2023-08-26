@@ -4,20 +4,53 @@ footer {
   text-align: end;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-
   margin-bottom: 1rem;
   flex-wrap: wrap;
+}
+#techIcons {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--c-dGrey);
 }
 .svgicon {
   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
     brightness(100%) contrast(84%);
   position: relative;
+  opacity: 0.5;
 }
 .svgicon {
   display: inline-block;
 }
 .svgicon:hover {
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  margin: 0 1rem;
+  height: 4rem;
+  display: inline-block;
+  cursor: pointer;
+  animation: moveToCenter2 0s forwards 7s;
+}
+.icon2 {
+  position: relative;
+  top: 0.5rem;
+  height: 5rem;
+}
+@keyframes moveToCenter2 {
+  0% {
+  }
+  100% {
+    filter: invert(76%) sepia(5%) saturate(6300%) hue-rotate(4deg)
+      brightness(178%) contrast(70%);
+  }
 }
