@@ -34,28 +34,3 @@ html {
 a {
   text-decoration: none;
 }
-
-@media (max-width: 620px) {
-  .addressContainer {
-    display: none;
-  }
-  .slogan {
-    display: none;
-  }
-  h1 {
-    font-size: 16vw;
-  }
-}
-@media (max-height: 660px) {
-  h1 {
-    font-size: 10vh;
-  }
-}
-@media (max-width: 730px) {
-}
-@media (max-width: 712) {
-  .project,
-  .projectU {
-    width: 100%;
-  }
-}
