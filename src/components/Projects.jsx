@@ -8,9 +8,10 @@ export default function Project(props) {
       <Overlay />
       <Canvas
         camera={{
-          zoom: 2,
+          zoom: 1.7,
           fov: 45,
           position: [0, -2, 0],
+          far: 200,
         }}
       >
         <Experience></Experience>
@@ -18,4 +19,13 @@ export default function Project(props) {
     </div>
   );
 }
-//<Canvas camera={{ zoom: 2, fov: 45, position: [0, -2, 0]}}>
+/*
+      <Canvas
+        camera={{
+          zoom: 1.7,
+          fov: 45,
+          position: [0, -2, 0],
+          far: 15,
+        }}
+      >
+*/
