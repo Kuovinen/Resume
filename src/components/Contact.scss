@@ -16,7 +16,9 @@
   gap: 2vh;
   padding: 1.5vh;
   flex-direction: column;
-  min-width: 50rem;
+  min-width: 35rem;
+  width: 50rem;
+  max-width: 30vw;
   height: 40rem;
   justify-content: flex-start;
 }
@@ -51,9 +53,7 @@ input:-webkit-autofill {
   vertical-align: top;
 }
 #sendBtn {
-  background: none;
-  cursor: pointer;
-  border: 0.1rem solid var(--c-lGrey);
+  @include m.button();
 }
 #sendBtn:active {
   transform: scale(0.99);

@@ -10,14 +10,16 @@ footer {
   gap: 1rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  z-index: 2;
+  background: var(--c-Black);
 }
-#techIcons {
+#techIcons,
+#techIconsGlow {
   display: flex;
   width: 100%;
   gap: 1rem;
   justify-content: center;
   padding-bottom: 0.5rem;
-  border-bottom: 0.2rem solid var(--c-dGrey);
 }
 .svgicon {
   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
@@ -28,8 +30,16 @@ footer {
 .svgicon {
   display: inline-block;
 }
-.svgicon:hover {
+#techIconsGlow {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  border-bottom: none;
+}
+#techIconsGlow > .svgicon:hover {
   opacity: 0.9;
+  filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
+    brightness(200%) contrast(84%) blur(0.3rem);
 }
 
 .icon1,
