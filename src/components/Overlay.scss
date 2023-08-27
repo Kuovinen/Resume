@@ -47,7 +47,6 @@
   border: none;
   transform: scaleY(3);
   position: absolute;
-  top: 50%;
   opacity: 0.25;
 }
 .btnFrwrd {
@@ -56,21 +55,34 @@
 .btnBack {
   left: 1rem;
 }
-
-.btnFrwrd:active,
-.btnBack:active {
-  transform: scale(0.95) scaleY(3);
-}
 @media screen and (min-width: 320px) {
   .info {
     //background-color: burlywood;
     margin: 0 auto;
+  }
+  .btnFrwrd,
+  .btnBack {
+    top: -10%;
+    transform: scaleY(1);
+  }
+  .btnFrwrd:active,
+  .btnBack:active {
+    transform: scale(0.95) scaleY(1);
   }
 }
 @media screen and (min-width: 481px) {
   .info {
     //background-color: rgb(112, 92, 65);
     margin: 0 auto;
+  }
+  .btnFrwrd,
+  .btnBack {
+    top: 50%;
+    transform: scaleY(3);
+  }
+  .btnFrwrd:active,
+  .btnBack:active {
+    transform: scale(0.95) scaleY(3);
   }
 }
 @media screen and (min-width: 769px) {
