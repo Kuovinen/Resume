@@ -1,7 +1,7 @@
 const projects = [
   {
     key: "p2",
-    name: " Weather report",
+    name: "Full stack Notetaker",
     description: (
       <span>
         A{" "}
@@ -16,16 +16,16 @@ const projects = [
         have studied into one cohesive whole.
       </span>
     ),
-    img: process.env.PUBLIC_URL + "projectImages/weatherMap.jpg",
+    img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
     tech: [],
-    using: "GoogleMaps API, 7Timer weather API,  Geonames API, Bootstrap ",
-    hosted: "Netlify",
-    code: "https://github.com/RomanZujev/weathermap",
-    url: "https://rzweathermap.netlify.app/",
+    using: "TypeScript, React, Express.js, MongoDb",
+    hosted: "AWS & Netlify",
+    code: "https://github.com/RomanZujev/rnotes",
+    url: "https://rznotes.netlify.app/",
   },
   {
     key: "p3",
-    name: "Full stack Notetaker",
+    name: " Weather report",
     description: (
       <span>
         A React app written in JavaScript and testesd with <b>Jest</b> that
@@ -35,13 +35,14 @@ const projects = [
         weather report app using <b>Bootstrap</b> for easy styling.
       </span>
     ),
-    img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
+    img: process.env.PUBLIC_URL + "projectImages/weatherMap.jpg",
     tech: [],
-    using: "TypeScript, React, Express.js, MongoDb",
-    hosted: "AWS & Netlify",
-    code: "https://github.com/RomanZujev/rnotes",
-    url: "https://rznotes.netlify.app/",
+    using: "GoogleMaps API, 7Timer weather API,  Geonames API, Bootstrap ",
+    hosted: "Netlify",
+    code: "https://github.com/RomanZujev/weathermap",
+    url: "https://rzweathermap.netlify.app/",
   },
+
   {
     key: "p1",
     name: "Restaurant template",

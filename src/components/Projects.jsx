@@ -7,6 +7,7 @@ export default function Project(props) {
     <div id="projectsContainer">
       <Overlay />
       <Canvas
+        dpr={[2, 2]}
         camera={{
           zoom: 1.7,
           fov: 45,

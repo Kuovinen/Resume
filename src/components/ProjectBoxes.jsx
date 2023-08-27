@@ -1,13 +1,16 @@
 import { useTexture } from "@react-three/drei";
-
+import projects from "./projectData";
 function ProjectBoxes() {
   //TEXTURES
-  const [colorMap] = useTexture(["weatherMap.jpg"]);
+  const textures = [];
+  projects.forEach((element) => textures.push(element.img));
+  console.log(textures);
+  const textureArray = useTexture([...textures]);
 
   //TEXTURES
   //(x, y) = (r * cos(θ), r * sin(θ))
   const radius = 10;
-  const numberOfElements = 16;
+  const numberOfElements = projects.length * 2;
   //const sectorUnits = 360 / numberOfElements;
   //  ^ which in radians is '2 * Math.PI /numberOfElements'
   const radians = (2 * Math.PI) / numberOfElements;
@@ -27,8 +30,12 @@ function ProjectBoxes() {
       >
         <boxGeometry args={[0.01, 3, 4]} />
         <meshStandardMaterial
-          opacity={i === 1 ? 1 : 0.1}
-          map={colorMap}
+          opacity={i === 1 ? 1 : 0.05}
+          map={
+            i > numberOfElements / 2
+              ? textureArray[i - numberOfElements / 2 - 1]
+              : textureArray[i - 1] //-1 because I init the i from 1, not 0
+          }
           transparent
           color={`rgb(${a}, ${a}, ${a})`}
           // side={THREE.DoubleSide}

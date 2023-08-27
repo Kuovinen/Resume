@@ -1,5 +1,5 @@
 import { OrbitControls, Text } from "@react-three/drei";
-import ProjectBoxes from "./ProjectBox";
+import ProjectBoxes from "./ProjectBoxes";
 
 function Experience() {
   return (
@@ -7,6 +7,7 @@ function Experience() {
       <group>
         <OrbitControls />
         <pointLight position={[0, 0, 0]} intensity={2} />
+        <ambientLight intensity={1} />
         <ProjectBoxes />
         <Text>HELLO WORLD</Text>
       </group>
