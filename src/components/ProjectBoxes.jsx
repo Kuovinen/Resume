@@ -3,7 +3,7 @@
 
 import { useTexture } from "@react-three/drei";
 import projects from "./projectData";
-function ProjectBoxes() {
+function ProjectBoxes(props) {
   //TEXTURES
   const textures = [];
   projects.forEach((element) => textures.push(element.img));
@@ -32,7 +32,13 @@ function ProjectBoxes() {
       >
         <boxGeometry args={[0.01, 3, 4]} />
         <meshStandardMaterial
-          opacity={i === 1 ? 1 : 0.05}
+          opacity={
+            i === props.currentPr + 1 ||
+            i - projects.length === props.currentPr + 1
+              ? 1
+              : 0.05
+          } // i needs to targer either the original array elements, or the clones,
+          //that's why there's an odd || operator here to cover all possibilities
           map={
             i > numberOfElements / 2
               ? textureArray[i - numberOfElements / 2 - 1]

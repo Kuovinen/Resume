@@ -15,7 +15,9 @@ function Experience(props) {
         <OrbitControls />
         <pointLight position={[0, 0, 0]} intensity={2} />
         <ambientLight intensity={1} color={`rgb(150, 110,10)`} />
-        <ProjectBoxes />
+        <group rotation-z={Math.PI * 0.1}>
+          <ProjectBoxes currentPr={props.currentPr} />
+        </group>
 
         <Center
           position-z={-1.8}

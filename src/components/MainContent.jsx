@@ -25,7 +25,10 @@ export default function Project(props) {
           far: 200,
         }}
       >
-        <Experience projectName={projects[currentPr].name}></Experience>
+        <Experience
+          projectName={projects[currentPr].name}
+          currentPr={currentPr}
+        ></Experience>
       </Canvas>
     </div>
   );
