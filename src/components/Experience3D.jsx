@@ -21,7 +21,7 @@ function Experience(props) {
           position-x={2.5} //larger=right, smaller=left
           position-y={8.5} //larger=backwards, smaller=forwards
           rotation-x={Math.PI * 0.5}
-          rotation-y={Math.PI * -0.17} //larger=more, smaller=less
+          rotation-y={Math.PI * -0.11} //larger=more, smaller=less
         >
           <Text3D font="./fonts/Exo2_Bold.json" height={0.2} size={0.35}>
             {props.projectName.toUpperCase()}

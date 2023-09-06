@@ -19,7 +19,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
-    tech: ["MongoDB", "NodeJS", "ReactJS"],
+    tech: ["MongoDB", "NodeJS", "ReactJS", "TypeScipt", "Express", "AWS"],
     using: "TypeScript, React, Express.js, MongoDb",
     hosted: "AWS & Netlify",
     code: "https://github.com/RomanZujev/rnotes",
@@ -38,7 +38,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/weatherMap.jpg",
-    tech: [],
+    tech: ["ReactJS", "JavaScript", "Bootstrap", "Jest"],
     using: "GoogleMaps API, 7Timer weather API,  Geonames API, Bootstrap ",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/weathermap",
@@ -59,7 +59,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/restaurantScreen.jpg",
-    tech: [],
+    tech: ["ReactJS", "JavaScript", "Sass"],
     using: "React, Redux, Sass, SessionStorage",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/Restaurant",
@@ -75,7 +75,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/taskManagerScreen.jpg",
-    tech: [],
+    tech: ["ReactJS", "JavaScript"],
     using: "React and LocalStorage",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/TaskManager",
@@ -93,7 +93,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/colorTools.jpg",
-    tech: [],
+    tech: ["JavaScript"],
     using: "pure JavaScript",
     hosted: "FireBase",
     code: "https://github.com/RomanZujev/ColorTools",
@@ -106,7 +106,7 @@ const projects = [
       <span>My first front-end, non framework project, using TypeScript</span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/cookbookDBScreen.jpg",
-    tech: [],
+    tech: ["TypeScipt"],
     using: "TypeScript, Webpack",
     hosted: "FireBase",
     code: "https://github.com/RomanZujev/CookBook/tree/portfolio",
@@ -121,7 +121,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
-    tech: [],
+    tech: ["TypeScipt", "ReactJS"],
     using: "React, TypeScript",
     hosted: "Not yet",
     code: "https://github.com/RomanZujev/chat-app",
@@ -138,7 +138,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/movieDBScreen.jpg",
-    tech: [],
+    tech: ["NodeJS"],
     using: "NodeJs, WebSockets",
     hosted: "Not yet",
     code: "https://github.com/RomanZujev/chat-app/tree/main/jabi_server",

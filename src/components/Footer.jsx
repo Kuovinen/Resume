@@ -26,21 +26,41 @@ export default function Footer(props) {
     { url: "skillIcons/nodejs.svg", txt: "NodeJS" },
     { url: "skillIcons/express.svg", txt: "Express" },
     { url: "skillIcons/docker.svg", txt: "Docker" },
+    { url: "skillIcons/awsl.svg", txt: "AWS" },
+    { url: "skillIcons/jest.svg", txt: "Jest" },
   ];
 
   return (
     <footer>
-      <div id="techIcons">
-        {iconData.map((element) => (
-          <FooterIcon url={element.url} txt={element.txt} glow={0} />
-        ))}
-      </div>
       <div id="techIconsGlow">
         {iconData.map((element) => {
           const glow = projects[currentProject].tech.includes(element.txt)
             ? 1
             : 0;
-          return <FooterIcon url={element.url} txt={element.txt} glow={glow} />;
+          return (
+            <FooterIcon
+              url={element.url}
+              txt={element.txt}
+              glow={glow}
+              glowMore={0}
+            />
+          );
+        })}
+      </div>
+
+      <div id="techIcons">
+        {iconData.map((element) => {
+          const glowMore = projects[currentProject].tech.includes(element.txt)
+            ? 1
+            : 0;
+          return (
+            <FooterIcon
+              url={element.url}
+              txt={element.txt}
+              glow={0}
+              glowMore={glowMore}
+            />
+          );
         })}
       </div>
       <div className="contactIcons">

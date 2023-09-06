@@ -7,7 +7,9 @@ export default function FooterIcon(props) {
       title={props.txt}
       src={props.url}
       alt={`${props.txt} icon`}
-      className={`svgicon ${props.glow === 1 ? "doGlow" : ""}`}
+      className={`svgicon ${props.glow === 1 ? "doGlow" : ""} ${
+        props.glowMore === 1 ? "glowMore" : ""
+      }`}
     />
   );
 }

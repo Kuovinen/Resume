@@ -21,11 +21,12 @@ footer {
   justify-content: center;
   padding-bottom: 0.5rem;
 }
+
 .svgicon {
   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
     brightness(100%) contrast(84%);
   position: relative;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .svgicon {
   display: inline-block;
@@ -42,9 +43,15 @@ footer {
 //     brightness(200%) contrast(84%) blur(0.3rem);
 // }
 .doGlow {
-  opacity: 0.9;
+  opacity: 1;
   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
-    brightness(200%) contrast(84%) blur(0.3rem);
+    brightness(500%) contrast(84%) blur(0.2rem);
+  // filter: invert(65%) sepia(12%) saturate(2115%) hue-rotate(9deg)
+  //   brightness(101%) contrast(98%) blur(0.3rem);
+}
+.glowMore {
+  opacity: 1;
+  z-index: 3;
 }
 .icon1,
 .icon2,
