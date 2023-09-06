@@ -1,21 +1,18 @@
 //THIS COMPONENT CONTAINS EVERYTHING TO DO WITH 3D ELEMENTS
 
-import {
-  OrbitControls,
-  Center,
-  Text3D,
-  GizmoViewport,
-} from "@react-three/drei";
+import { OrbitControls, Center, Text3D } from "@react-three/drei";
 import ProjectBoxes from "./ProjectBoxes";
 
 function Experience(props) {
+  const rotationUnit = 1 / props.length;
+  console.log(rotationUnit);
   return (
     <>
       <group>
         <OrbitControls />
         <pointLight position={[0, 0, 0]} intensity={2} />
         <ambientLight intensity={1} color={`rgb(150, 110,10)`} />
-        <group rotation-z={Math.PI * 0.1}>
+        <group rotation-z={Math.PI * props.currentPr * -rotationUnit}>
           <ProjectBoxes currentPr={props.currentPr} />
         </group>
 
@@ -44,10 +41,4 @@ export default Experience;
           <planeGeometry />
           <meshStandardMaterial color="black" />
         </mesh>
-*/
-/*
-        <GizmoViewport
-          axisColors={["red", "green", "blue"]}
-          labelColor="black"
-        />
 */

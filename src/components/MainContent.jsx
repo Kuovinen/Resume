@@ -28,6 +28,7 @@ export default function Project(props) {
         <Experience
           projectName={projects[currentPr].name}
           currentPr={currentPr}
+          length={projects.length}
         ></Experience>
       </Canvas>
     </div>
