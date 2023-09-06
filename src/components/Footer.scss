@@ -36,12 +36,16 @@ footer {
   top: 0;
   border-bottom: none;
 }
-#techIconsGlow > .svgicon:hover {
+// #techIconsGlow > .svgicon:hover {
+//   opacity: 0.9;
+//   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
+//     brightness(200%) contrast(84%) blur(0.3rem);
+// }
+.doGlow {
   opacity: 0.9;
   filter: invert(75%) sepia(0%) saturate(6595%) hue-rotate(350deg)
     brightness(200%) contrast(84%) blur(0.3rem);
 }
-
 .icon1,
 .icon2,
 .icon3 {

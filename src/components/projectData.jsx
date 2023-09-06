@@ -19,7 +19,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
-    tech: [],
+    tech: ["MongoDB", "NodeJS", "ReactJS"],
     using: "TypeScript, React, Express.js, MongoDb",
     hosted: "AWS & Netlify",
     code: "https://github.com/RomanZujev/rnotes",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     key: "p3",
-    name: " WeatherMap",
+    name: "Forecast",
     description: (
       <span>
         A React app written in JavaScript and testesd with <b>Jest</b> that
@@ -67,7 +67,7 @@ const projects = [
   },
   {
     key: "p4",
-    name: "TaskManager",
+    name: "DayPlanEr",
     description: (
       <span>
         A simple React application written in JavaScript that uses LocalStorage
@@ -146,3 +146,17 @@ const projects = [
   },
 ];
 export default projects;
+
+const iconData = [
+  { url: "skillIcons/js.svg", txt: "JavaScript" },
+  { url: "skillIcons/ts.svg", txt: "TypeScipt" },
+  { url: "skillIcons/mongodb.svg", txt: "MongoDB" },
+  { url: "skillIcons/react.svg", txt: "ReactJS" },
+  { url: "skillIcons/sass.svg", txt: "Sass" },
+  { url: "skillIcons/html.svg", txt: "HTML" },
+  { url: "skillIcons/css.svg", txt: "CSS" },
+  { url: "skillIcons/azure.svg", txt: "Azure" },
+  { url: "skillIcons/nodejs.svg", txt: "NodeJS" },
+  { url: "skillIcons/express.svg", txt: "Express" },
+  { url: "skillIcons/docker.svg", txt: "Docker" },
+];

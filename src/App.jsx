@@ -3,11 +3,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
-import Projects from "./components/MainContent";
+import MainContent from "./components/MainContent";
 function App() {
   const resumeElRef = React.useRef(<div></div>);
   const contactElRef = React.useRef(<div></div>);
-
+  const [currentPr, setCurrentPr] = React.useState(0);
   return (
     <div className="App">
       {/*<div className="overlay1">
@@ -17,9 +17,9 @@ function App() {
       <main>
         <Resume resRef={resumeElRef} conRef={contactElRef} />
         <Contact conRef={contactElRef} resRef={resumeElRef} />
-        <Projects />
+        <MainContent currentPr={currentPr} setCurrentPr={setCurrentPr} />
       </main>
-      <Footer />
+      <Footer currentPr={currentPr} />
     </div>
   );
 }

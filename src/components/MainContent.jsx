@@ -1,14 +1,14 @@
 //THIS IS THE GENERAL CONTAINER FOR THE MAIN CONTENT
 //3D elements beneath an overlay
 
-import React from "react";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience3D";
 import Overlay from "./Overlay";
 import projects from "./projectData";
 
 export default function Project(props) {
-  const [currentPr, setCurrentPr] = React.useState(0);
+  const { currentPr, setCurrentPr } = { ...props };
+
   return (
     <div id="projectsContainer">
       <Overlay
