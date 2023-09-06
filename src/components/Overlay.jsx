@@ -1,8 +1,7 @@
 //THIS IS A 2D OVERLAY ABOVE THE 3D CARUSEL
-import React from "react";
-import projects from "./projectData";
+
 export default function Overlay(props) {
-  const [currentPr, setCurrentPr] = React.useState(0);
+  const { setCurrentPr, currentPr, projects } = { ...props };
   function openNewTab(target) {
     window.open(target, "_blank");
   }

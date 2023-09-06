@@ -1,17 +1,34 @@
 //THIS COMPONENT CONTAINS EVERYTHING TO DO WITH 3D ELEMENTS
 
-import { OrbitControls, Text } from "@react-three/drei";
+import {
+  OrbitControls,
+  Center,
+  Text3D,
+  GizmoViewport,
+} from "@react-three/drei";
 import ProjectBoxes from "./ProjectBoxes";
 
-function Experience() {
+function Experience(props) {
   return (
     <>
       <group>
         <OrbitControls />
         <pointLight position={[0, 0, 0]} intensity={2} />
-        <ambientLight intensity={1} />
+        <ambientLight intensity={1} color={`rgb(150, 110,10)`} />
         <ProjectBoxes />
-        <Text>HELLO WORLD</Text>
+
+        <Center
+          position-z={-1.8}
+          position-x={2.7} //larger=right, smaller=left
+          position-y={8.5} //larger=backwards, smaller=forwards
+          rotation-x={Math.PI * 0.5}
+          rotation-y={Math.PI * -0.16}
+        >
+          <Text3D font="./fonts/Exo2_Bold.json" height={0.2} size={0.35}>
+            {props.projectName.toUpperCase()}
+            <meshStandardMaterial color={`rgb(140, 110,10)`} />
+          </Text3D>
+        </Center>
       </group>
     </>
   );
@@ -25,4 +42,10 @@ export default Experience;
           <planeGeometry />
           <meshStandardMaterial color="black" />
         </mesh>
+*/
+/*
+        <GizmoViewport
+          axisColors={["red", "green", "blue"]}
+          labelColor="black"
+        />
 */

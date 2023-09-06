@@ -1,8 +1,9 @@
 //THIS CONTAINS ALL THE INFORMATION NEEDED TO OUTPUT THE PROJECT INFORMATION
+
 const projects = [
   {
     key: "p2",
-    name: "Full stack Notetaker",
+    name: "NoteTaker",
     description: (
       <span>
         A{" "}
@@ -26,7 +27,7 @@ const projects = [
   },
   {
     key: "p3",
-    name: " Weather report",
+    name: " WeatherMap",
     description: (
       <span>
         A React app written in JavaScript and testesd with <b>Jest</b> that
@@ -46,7 +47,7 @@ const projects = [
 
   {
     key: "p1",
-    name: "Restaurant template",
+    name: "Restaurant",
     description: (
       <span>
         A React app written in <b>JavaScript</b> uses Redux for state management
@@ -66,7 +67,7 @@ const projects = [
   },
   {
     key: "p4",
-    name: "Task manager",
+    name: "TaskManager",
     description: (
       <span>
         A simple React application written in JavaScript that uses LocalStorage
@@ -100,7 +101,7 @@ const projects = [
   },
   {
     key: "p6",
-    name: "Cookbook",
+    name: "CookBook",
     description: (
       <span>My first front-end, non framework project, using TypeScript</span>
     ),
@@ -129,7 +130,7 @@ const projects = [
 
   {
     key: "p7.1",
-    name: "ChatApp server api",
+    name: "ServerApi",
     description: (
       <span>
         A backend for the ChatApp application written using NodeJs and

@@ -1,12 +1,21 @@
 //THIS IS THE GENERAL CONTAINER FOR THE MAIN CONTENT
 //3D elements beneath an overlay
+
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience3D";
 import Overlay from "./Overlay";
+import projects from "./projectData";
+
 export default function Project(props) {
+  const [currentPr, setCurrentPr] = React.useState(0);
   return (
     <div id="projectsContainer">
-      <Overlay />
+      <Overlay
+        currentPr={currentPr}
+        setCurrentPr={setCurrentPr}
+        projects={projects}
+      />
       <Canvas
         dpr={[2, 2]}
         camera={{
@@ -16,7 +25,7 @@ export default function Project(props) {
           far: 200,
         }}
       >
-        <Experience></Experience>
+        <Experience projectName={projects[currentPr].name}></Experience>
       </Canvas>
     </div>
   );
@@ -30,4 +39,8 @@ export default function Project(props) {
           far: 15,
         }}
       >
+*/
+/*
+
+
 */

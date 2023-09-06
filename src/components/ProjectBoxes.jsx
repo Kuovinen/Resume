@@ -7,23 +7,22 @@ function ProjectBoxes() {
   //TEXTURES
   const textures = [];
   projects.forEach((element) => textures.push(element.img));
-  console.log(textures);
   const textureArray = useTexture([...textures]);
 
   //TEXTURES
   //(x, y) = (r * cos(θ), r * sin(θ))
-  const radius = 10;
+  const radius = 10; //arbitrary, what looks good
   const numberOfElements = projects.length * 2;
+  //x2 because I need a wide circle so I double the number of elements
   //const sectorUnits = 360 / numberOfElements;
   //  ^ which in radians is '2 * Math.PI /numberOfElements'
   const radians = (2 * Math.PI) / numberOfElements;
-
   const boxArray = [];
   for (let i = 1; i <= numberOfElements; i++) {
     const positionx = radius * Math.cos(radians * i);
     const positiony = radius * Math.sin(radians * i);
     const rotation = radians * i;
-    const a = 140;
+    const a = 140; //the RGB color constant for boxes baseline color
     boxArray.push(
       <mesh
         key={crypto.randomUUID()}
