@@ -1,3 +1,5 @@
+//CONTAINS THE NAME LOGO, RESUME and CONTACT SECTIONS
+
 export default function Header(props) {
   function resumeResponse() {
     //switch the resume info window ON or OFF

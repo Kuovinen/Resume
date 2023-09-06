@@ -1,3 +1,4 @@
+//THIS IS A 2D OVERLAY ABOVE THE 3D CARUSEL
 import React from "react";
 import projects from "./projectData";
 export default function Overlay(props) {

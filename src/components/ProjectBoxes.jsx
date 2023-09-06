@@ -1,3 +1,6 @@
+//THI COMPONENT RETURNS A GROUP CONTAINING AND ARRAY OF 3D BOXES, EACH WITH A
+//PROJECT SET AS A TEXUTURE
+
 import { useTexture } from "@react-three/drei";
 import projects from "./projectData";
 function ProjectBoxes() {

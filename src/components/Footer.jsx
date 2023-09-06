@@ -1,3 +1,5 @@
+//THIS COMPONENT HOLDS BOTH TECH ITEMS AND PERSONAL ICONS FOR CONTACT
+
 import "./Header.scss";
 import FooterIcon from "./Footer/FooterIcon";
 import git from "../git.svg";

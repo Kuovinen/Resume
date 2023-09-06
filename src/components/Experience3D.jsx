@@ -1,3 +1,5 @@
+//THIS COMPONENT CONTAINS EVERYTHING TO DO WITH 3D ELEMENTS
+
 import { OrbitControls, Text } from "@react-three/drei";
 import ProjectBoxes from "./ProjectBoxes";
 

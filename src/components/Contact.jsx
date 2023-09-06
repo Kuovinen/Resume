@@ -1,3 +1,5 @@
+//THIS IS THE POP UP CONTACT WINDOW WE GET WHEN THE BUTTON "CONTACT" IS CLICKED
+
 import React from "react";
 export default function Contact(props) {
   // function hideContact() {

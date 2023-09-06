@@ -1,6 +1,7 @@
+//THIS IS THE GENERAL CONTAINER FOR THE MAIN CONTENT
+//3D elements beneath an overlay
 import { Canvas } from "@react-three/fiber";
-
-import Experience from "./Experience";
+import Experience from "./Experience3D";
 import Overlay from "./Overlay";
 export default function Project(props) {
   return (

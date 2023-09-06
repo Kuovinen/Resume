@@ -1,3 +1,5 @@
+//THIS IS THE POP UP RESUME WINDOW WE GET WHEN THE BUTTON "RESUME" IS CLICKED
+
 export default function Resume(props) {
   function hideResume() {
     props.resRef.current.className = "hiddenContainer";
