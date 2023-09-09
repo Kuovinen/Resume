@@ -114,10 +114,12 @@ const projects = [
   },
   {
     key: "p7",
-    name: "ChatApp",
+    name: "ChatApp*",
     description: (
       <span>
-        An as of yet unfinished React chat applilcation written in TypeScript.
+        A React chat applilcation written in TypeScript.
+        <br />
+        <span className="ylw">* This project is under development</span>
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
@@ -130,11 +132,13 @@ const projects = [
 
   {
     key: "p7.1",
-    name: "ServerApi",
+    name: "ServerApi*",
     description: (
       <span>
         A backend for the ChatApp application written using NodeJs and
         Websockets.
+        <br />
+        <span className="ylw">* This project is under development</span>
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/movieDBScreen.jpg",
