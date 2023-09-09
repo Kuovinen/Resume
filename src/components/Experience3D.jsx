@@ -2,7 +2,11 @@
 
 import { OrbitControls, Center, Text3D } from "@react-three/drei";
 import ProjectBoxes from "./ProjectBoxes";
-
+import {
+  Selection,
+  EffectComposer,
+  Outline,
+} from "@react-three/postprocessing";
 function Experience(props) {
   const rotationUnit = 1 / props.length;
   console.log(rotationUnit);
@@ -12,10 +16,19 @@ function Experience(props) {
         <OrbitControls />
         <pointLight position={[0, 0, 0]} intensity={2} />
         <ambientLight intensity={1} color={`rgb(150, 110,10)`} />
-        <group rotation-z={Math.PI * props.currentPr * -rotationUnit}>
-          <ProjectBoxes currentPr={props.currentPr} />
-        </group>
-
+        <Selection>
+          <EffectComposer multisampling={8} autoClear={false}>
+            <Outline
+              blur
+              visibleEdgeColor="white"
+              edgeStrength={10}
+              width={3000}
+            />
+          </EffectComposer>
+          <group rotation-z={Math.PI * props.currentPr * -rotationUnit}>
+            <ProjectBoxes currentPr={props.currentPr} />
+          </group>
+        </Selection>
         <Center
           position-z={-1.9}
           position-x={2.5} //larger=right, smaller=left

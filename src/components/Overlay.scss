@@ -4,6 +4,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  pointer-events: none;
   // border: 0.5rem solid black;
 }
 .info {
@@ -15,6 +16,8 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.538);
+  padding: 1rem;
 }
 .description {
   margin-bottom: 5rem;
@@ -35,6 +38,8 @@
   font-size: 2rem;
   width: 50%;
   left: 25%;
+  pointer-events: auto;
+  margin-bottom: 1rem;
 }
 .gitbtn:hover {
   box-shadow: 0px 0px 3px 0px var(--c-lGrey);
@@ -48,6 +53,7 @@
   transform: scaleY(3);
   position: absolute;
   opacity: 0.25;
+  pointer-events: auto;
 }
 .btnFrwrd {
   right: 1rem;

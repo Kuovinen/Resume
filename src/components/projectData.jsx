@@ -146,17 +146,3 @@ const projects = [
   },
 ];
 export default projects;
-
-const iconData = [
-  { url: "skillIcons/js.svg", txt: "JavaScript" },
-  { url: "skillIcons/ts.svg", txt: "TypeScipt" },
-  { url: "skillIcons/mongodb.svg", txt: "MongoDB" },
-  { url: "skillIcons/react.svg", txt: "ReactJS" },
-  { url: "skillIcons/sass.svg", txt: "Sass" },
-  { url: "skillIcons/html.svg", txt: "HTML" },
-  { url: "skillIcons/css.svg", txt: "CSS" },
-  { url: "skillIcons/azure.svg", txt: "Azure" },
-  { url: "skillIcons/nodejs.svg", txt: "NodeJS" },
-  { url: "skillIcons/express.svg", txt: "Express" },
-  { url: "skillIcons/docker.svg", txt: "Docker" },
-];
