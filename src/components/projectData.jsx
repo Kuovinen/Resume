@@ -51,9 +51,8 @@ const projects = [
     description: (
       <span>
         A React app written in <b>JavaScript</b> uses Redux for state management
-        and
-        <b>Sass</b> for styling. Since writing a backend seemed excessive I
-        handled the user account creation and login using <b>session storage</b>{" "}
+        and <b>Sass</b> for styling. Since writing a backend seemed excessive I
+        handled the user account creation and login using <b>session storage</b>
         which ofcourse would not a the real life approach, but works as a simple
         alternative.
       </span>

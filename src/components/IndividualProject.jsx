@@ -8,9 +8,18 @@ function IndividualProject(props) {
   const numberOfElements = props.numberOfElements;
   const iteration = props.i;
   const rgb = 140; //the RGB color constant for boxes baseline color
+  const rgb2 = 100; //the RGB color constant for boxes baseline color
   const checkIfCurrent =
     iteration === props.currentPr + 1 || //if this is the CURRENT project
     iteration - props.projects.length === props.currentPr + 1;
+
+  const currentProjectTexture =
+    iteration > numberOfElements / 2
+      ? textureArray[iteration - numberOfElements / 2 - 1]
+      : textureArray[iteration - 1]; //-1 because I init the i from 1, not 0
+  const currentProjectColor = checkIfCurrent
+    ? `rgb(${rgb}, ${rgb}, ${rgb})`
+    : `rgb(${rgb2}, ${rgb2}, ${rgb2})`;
   function openLive() {
     window.open(props.projects[iteration - 1].url, "_blank");
   }
@@ -26,15 +35,10 @@ function IndividualProject(props) {
     >
       <boxGeometry args={[0.01, 3, 4]} />
       <meshStandardMaterial
-        opacity={checkIfCurrent ? 1 : 0.01} // i needs to targer either the original array elements, or the clones,
-        //that's why there's an odd || operator here to cover all possibilities
-        map={
-          iteration > numberOfElements / 2
-            ? textureArray[iteration - numberOfElements / 2 - 1]
-            : textureArray[iteration - 1] //-1 because I init the i from 1, not 0
-        }
+        opacity={checkIfCurrent ? 1 : 0.01} // all but current are dimmed
+        map={checkIfCurrent ? currentProjectTexture : currentProjectTexture}
         transparent
-        color={`rgb(${rgb}, ${rgb}, ${rgb})`}
+        color={currentProjectColor}
         // side={THREE.DoubleSide}
       />
     </mesh>

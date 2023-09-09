@@ -7,7 +7,12 @@ import linkedIn from "../linkedin.svg";
 import email from "../email.svg";
 import projects from "./projectData";
 export default function Footer(props) {
-  const currentProject = props.currentPr;
+  const currentProject =
+    props.currentPr >= projects.length
+      ? props.currentPr - projects.length
+      : props.currentPr; //because I had to double the number of project items
+  //I now need to make the duplicate batch have the same project numbers
+  //as the original because it's originally one array
   function openGit() {
     window.open("https://github.com/RomanZujev", "_blank");
   }

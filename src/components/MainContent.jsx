@@ -8,6 +8,8 @@ import projects from "./projectData";
 
 export default function Project(props) {
   const { currentPr, setCurrentPr } = { ...props };
+  const currentProjectNumber =
+    currentPr >= projects.length ? currentPr - projects.length : currentPr;
 
   return (
     <div id="projectsContainer">
@@ -26,7 +28,7 @@ export default function Project(props) {
         }}
       >
         <Experience
-          projectName={projects[currentPr].name}
+          projectName={projects[currentProjectNumber].name}
           currentPr={currentPr}
           length={projects.length}
         ></Experience>
