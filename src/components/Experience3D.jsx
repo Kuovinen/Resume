@@ -23,16 +23,7 @@ function Experience(props) {
     if (difference < arbitraryTolerance) {
       boxGroup.current.rotation.z = desiredRotation;
     } //stop if close enough and assign the desired rotation
-    console.log("desired:", Math.PI * props.currentPr * -rotationUnit);
-    console.log("current:", boxGroup.current.rotation.z);
-    console.log("difference:", difference);
-    console.log(
-      "RADIAN:",
-      boxGroup.current.rotation.z,
-      "\n",
-      rotationUnit2 * (2 * props.length - 2),
-      "\n ----------------"
-    );
+
     //if first element rotating left
     //(check if difference is huge, exasserbate 1 sector worth further then reset
     //the rotation)
@@ -97,11 +88,4 @@ function Experience(props) {
 }
 export default Experience;
 
-//<boxGeometry args={[0.01, 3, 4]} />
-//<OrbitControls />
-/*
-        <mesh scale={100} position={[0, 0, -2]}>
-          <planeGeometry />
-          <meshStandardMaterial color="black" />
-        </mesh>
-*/
+//<OrbitControls />//allows rotation of viewport

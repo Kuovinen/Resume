@@ -44,6 +44,7 @@ export default function Footer(props) {
             : 0;
           return (
             <FooterIcon
+              key={crypto.randomUUID()}
               url={element.url}
               txt={element.txt}
               glow={glow}
@@ -60,6 +61,7 @@ export default function Footer(props) {
             : 0;
           return (
             <FooterIcon
+              key={crypto.randomUUID()}
               url={element.url}
               txt={element.txt}
               glow={0}

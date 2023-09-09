@@ -12,16 +12,20 @@ function IndividualProject(props) {
   const checkIfCurrent =
     iteration === props.currentPr + 1 || //if this is the CURRENT project
     iteration - props.projects.length === props.currentPr + 1;
-
+  const realProjectNumber = //because I have double the amount 3D project boxes
+    iteration > numberOfElements / 2
+      ? iteration - numberOfElements / 2 - 1
+      : iteration - 1;
   const currentProjectTexture =
     iteration > numberOfElements / 2
-      ? textureArray[iteration - numberOfElements / 2 - 1]
-      : textureArray[iteration - 1]; //-1 because I init the i from 1, not 0
+      ? textureArray[realProjectNumber]
+      : textureArray[realProjectNumber]; //-1 because I init the i from 1, not 0
   const currentProjectColor = checkIfCurrent
     ? `rgb(${rgb}, ${rgb}, ${rgb})`
     : `rgb(${rgb2}, ${rgb2}, ${rgb2})`;
+
   function openLive() {
-    window.open(props.projects[iteration - 1].url, "_blank");
+    window.open(props.projects[realProjectNumber].url, "_blank");
   }
   const theMesh = (
     <mesh

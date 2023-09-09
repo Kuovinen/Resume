@@ -34,6 +34,7 @@ function ProjectBoxes(props) {
         positiony={positiony}
         rotation={rotation}
         i={i}
+        key={crypto.randomUUID()}
         textures={textures}
         numberOfElements={numberOfElements}
         projects={projects}

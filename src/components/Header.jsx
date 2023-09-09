@@ -22,19 +22,6 @@ export default function Header(props) {
   return (
     <header>
       <div className="containerLeft">
-        {/* <p className="firstName">
-          <span>R</span>
-          <span>O</span>
-          <span>M</span>
-          <span>A</span>
-          <span>N</span>
-          <span> </span>
-          <span>Z</span>
-          <span>U</span>
-          <span>J</span>
-          <span>E</span>
-          <span>V</span>
-        </p> */}
         <p className="firstName">
           <span className="fn1">E</span>
           <span className="fn2">M</span>

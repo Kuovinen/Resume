@@ -10,9 +10,9 @@ function App() {
   const [currentPr, setCurrentPr] = React.useState(0);
   return (
     <div className="App">
-      {/*<div className="overlay1">
+      <div className="overlay1">
         <div className="overlay2"></div>
-  </div>*/}
+      </div>
       <Header resRef={resumeElRef} conRef={contactElRef} />
       <main>
         <Resume resRef={resumeElRef} conRef={contactElRef} />
