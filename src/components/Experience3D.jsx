@@ -1,6 +1,6 @@
 //THIS COMPONENT CONTAINS EVERYTHING TO DO WITH 3D ELEMENTS
 
-import { OrbitControls, Center, Text3D } from "@react-three/drei";
+import { Center, Text3D } from "@react-three/drei";
 import ProjectBoxes from "./ProjectBoxes";
 import React from "react";
 import { useFrame } from "@react-three/fiber";
