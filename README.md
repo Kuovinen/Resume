@@ -5,7 +5,7 @@ Written in **JavaScript** using **React**.
 Live link:
 https://rzportfolio.netlify.app/
 
-To run locally :<br  />
+To run locally console commands in root directory of the files:<br  />
 
 ```
 npm install
