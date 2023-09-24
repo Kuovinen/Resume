@@ -31,6 +31,23 @@
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
+.curtain {
+  cursor: pointer;
+  background-color: var(--c-Black);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  text-decoration: underline;
+}
+.curtainUp {
+  animation: curtainRise 1s ease-in;
+  animation-fill-mode: forwards;
+}
 main {
   display: flex;
   justify-content: center;
@@ -41,12 +58,12 @@ main {
 }
 @media screen and (min-width: 320px) {
   main {
-    height: 90%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 481px) {
   main {
-    height: 110%;
+    height: 120%;
   }
 }
 @media screen and (min-width: 769px) {
@@ -90,6 +107,18 @@ main {
   .svgicon {
     width: 3rem;
     height: 3rem;
+  }
+}
+@keyframes curtainRise {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.1;
+  }
+  100% {
+    display: none;
+    visibility: hidden;
   }
 }
 

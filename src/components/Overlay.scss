@@ -7,23 +7,7 @@
   pointer-events: none;
   // border: 0.5rem solid black;
 }
-.curtain {
-  cursor: pointer;
-  background-color: var(--c-Black);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  text-decoration: underline;
-}
-.curtainUp {
-  animation: curtainRise 1s ease-in;
-  animation-fill-mode: forwards;
-}
+
 .info {
   height: 100%;
   position: relative;
@@ -84,7 +68,7 @@
 @media screen and (min-width: 320px) {
   .info {
     //background-color: burlywood;
-    margin: 30vh auto;
+    margin: 32vh auto;
   }
   .btnFrwrd,
   .btnBack {
@@ -99,7 +83,7 @@
 @media screen and (min-width: 481px) {
   .info {
     //background-color: rgb(112, 92, 65);
-    margin: 45vh auto;
+    margin: 48vh auto;
   }
   .btnFrwrd,
   .btnBack {
@@ -125,15 +109,3 @@
 }
 
 // 320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops,
-@keyframes curtainRise {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.1;
-  }
-  100% {
-    display: none;
-    visibility: hidden;
-  }
-}

@@ -17,20 +17,8 @@ export default function Overlay(props) {
     } else setCurrentPr((original) => original + direction);
   }
 
-  const curtain = React.useRef(null);
-
   return (
     <div>
-      <section
-        ref={curtain}
-        className="curtain"
-        onClick={() => {
-          curtain.current.innerHTML = "";
-          curtain.current.className = "curtain curtainUp";
-        }}
-      >
-        PROJECTS
-      </section>
       <section className={"overlay"}>
         <button className="btnBack" onClick={() => buttonClick(-1)}>
           {"<"}
