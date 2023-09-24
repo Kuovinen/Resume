@@ -14,10 +14,10 @@ export default function Footer(props) {
   //I now need to make the duplicate batch have the same project numbers
   //as the original because it's originally one array
   function openGit() {
-    window.open("https://github.com/RomanZujev", "_blank");
+    window.open("https://github.com/Kuovinen", "_blank");
   }
   function openWP() {
-    window.open("https://www.linkedin.com/in/roman-zujev-a06a51238/");
+    window.open("https://www.linkedin.com/in/emil-kuovinen-a06a51238/");
   }
   const iconData = [
     { url: "skillIcons/js.svg", txt: "JavaScript" },
