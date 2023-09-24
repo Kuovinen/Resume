@@ -32,6 +32,13 @@ export default function Overlay(props) {
         PROJECTS
       </section>
       <section className={"overlay"}>
+        <button className="btnBack" onClick={() => buttonClick(-1)}>
+          {"<"}
+        </button>
+
+        <button className="btnFrwrd" onClick={() => buttonClick(1)}>
+          {">"}
+        </button>
         <div className="info">
           <p className="description">
             {projects[currentProjectNumber].description}
@@ -43,14 +50,6 @@ export default function Overlay(props) {
             GitHub
           </button>
         </div>
-
-        <button className="btnBack" onClick={() => buttonClick(-1)}>
-          {"<"}
-        </button>
-
-        <button className="btnFrwrd" onClick={() => buttonClick(1)}>
-          {">"}
-        </button>
       </section>
     </div>
   );

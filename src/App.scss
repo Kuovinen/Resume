@@ -35,6 +35,24 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+  height: 100%;
+  background-color: var(--c-Black);
+}
+@media screen and (min-width: 320px) {
+  main {
+    height: 90%;
+  }
+}
+@media screen and (min-width: 481px) {
+  main {
+    height: 110%;
+  }
+}
+@media screen and (min-width: 769px) {
+  main {
+    height: 100%;
+  }
 }
 @keyframes fadeOut {
   0% {
