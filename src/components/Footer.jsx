@@ -17,7 +17,7 @@ export default function Footer(props) {
     window.open("https://github.com/Kuovinen", "_blank");
   }
   function openWP() {
-    window.open("https://www.linkedin.com/in/emil-kuovinen-a06a51238/");
+    window.open("https://www.linkedin.com/in/emil-kuovinen/");
   }
   const iconData = [
     { url: "skillIcons/js.svg", txt: "JavaScript" },
