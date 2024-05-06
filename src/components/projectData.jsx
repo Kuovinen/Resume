@@ -131,21 +131,20 @@ const projects = [
 
   {
     key: "p7.1",
-    name: "ServerApi*",
+    name: "TimerApp",
     description: (
       <span>
-        A backend for the ChatApp application written using NodeJs and
-        Websockets.
+        A <b>React Native</b> timer app for workouts. Written in JavaScript it
+        uses the <b> Expo </b> framework. Runs on both IOS and Android.
         <br />
-        <span className="ylw">* This project is under development</span>
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/movieDBScreen.jpg",
-    tech: ["NodeJS"],
-    using: "NodeJs, WebSockets",
+    tech: ["JavaScript", "ReactJS"],
+    using: "ReactJs, JavaScript",
     hosted: "Not yet",
-    code: "https://github.com/RomanZujev/chat-app/tree/main/jabi_server",
-    url: "https://github.com/RomanZujev/chat-app/tree/main/jabi_server",
+    code: "https://github.com/Kuovinen/workoutTimerApp",
+    url: "https://github.com/Kuovinen/workoutTimerApp",
   },
 ];
 export default projects;
