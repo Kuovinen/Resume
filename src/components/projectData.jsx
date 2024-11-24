@@ -2,28 +2,22 @@
 
 const projects = [
   {
-    key: "p2",
-    name: "NoteTaker",
+    key: "p7",
+    name: "ChatApp",
     description: (
       <span>
-        A{" "}
-        <u>
-          <b>full-stack</b>
-        </u>{" "}
-        React memo taking app written in <b>TypeScript</b> and hosted on Netlify
-        that also contains it's own <b>Node.Js/Express</b> server that's written
-        in <b>JavaScript</b> and hosted on <b>AWS</b> under it's own domain name
-        as well as using <b>MongoDB</b> as a database hosted on their{" "}
-        <b>Atlas</b> service. Created to bring all the individual components I
-        have studied into one cohesive whole.
+        This is a fullstack MERN chat application with socket io. The front-end
+        is <b>JavaScript</b> code using the <b>ReactJS</b> library, The backend
+        is <b>NodeJS</b> using <b>ExpressJS</b> and <b>Mongoose</b>, the
+        database is <b>MongoDB</b>.
       </span>
     ),
-    img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
-    tech: ["MongoDB", "NodeJS", "ReactJS", "TypeScipt", "Express", "AWS"],
-    using: "TypeScript, React, Express.js, MongoDb",
-    hosted: "AWS & Netlify",
-    code: "https://github.com/RomanZujev/rnotes",
-    url: "https://rznotes.netlify.app/",
+    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
+    tech: ["TypeScipt", "ReactJS"],
+    using: "React, TypeScript",
+    hosted: "Not yet",
+    code: "https://github.com/Kuovinen/ChatApp",
+    url: "https://chatapp-o2zq.onrender.com",
   },
   {
     key: "p3",
@@ -111,24 +105,32 @@ const projects = [
     code: "https://github.com/RomanZujev/CookBook/tree/portfolio",
     url: "https://zrcookbook.firebaseapp.com/",
   },
+
   {
-    key: "p7",
-    name: "ChatApp*",
+    key: "p2",
+    name: "NoteTaker",
     description: (
       <span>
-        A React chat applilcation written in TypeScript.
-        <br />
-        <span className="ylw">* This project is under development</span>
+        A{" "}
+        <u>
+          <b>full-stack</b>
+        </u>{" "}
+        React memo taking app written in <b>TypeScript</b> and hosted on Netlify
+        that also contains it's own <b>Node.Js/Express</b> server that's written
+        in <b>JavaScript</b> and hosted on <b>AWS</b> under it's own domain name
+        as well as using <b>MongoDB</b> as a database hosted on their{" "}
+        <b>Atlas</b> service. Created to bring all the individual components I
+        have studied into one cohesive whole.
+        <span className="ylw">* This project is under development.</span>
       </span>
     ),
-    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
-    tech: ["TypeScipt", "ReactJS"],
-    using: "React, TypeScript",
-    hosted: "Not yet",
-    code: "https://github.com/RomanZujev/chat-app",
-    url: "https://github.com/RomanZujev/chat-app",
+    img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
+    tech: ["MongoDB", "NodeJS", "ReactJS", "TypeScipt", "Express", "AWS"],
+    using: "TypeScript, React, Express.js, MongoDb",
+    hosted: "AWS & Netlify",
+    code: "https://github.com/RomanZujev/rnotes",
+    url: "https://rznotes.netlify.app/",
   },
-
   {
     key: "p7.1",
     name: "TimerApp",
