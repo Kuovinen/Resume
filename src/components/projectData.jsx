@@ -2,32 +2,6 @@
 
 const projects = [
   {
-    key: "p7",
-    name: "ChatApp",
-    description: (
-      <span>
-        This is a fullstack MERN chat application with socket io. The front-end
-        is <b>JavaScript</b> code using the <b>ReactJS</b> library, The backend
-        is <b>NodeJS</b> using <b>ExpressJS</b> and <b>Mongoose</b>, the
-        database is <b>MongoDB</b>.
-      </span>
-    ),
-    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
-    tech: [
-      "JavaScipt",
-      "ReactJS",
-      "MongoDB",
-      "NodeJS",
-      "Express",
-      "HTML",
-      "CSS",
-    ],
-    using: "React, TypeScript",
-    hosted: "Not yet",
-    code: "https://github.com/Kuovinen/ChatApp",
-    url: "https://chatapp-o2zq.onrender.com",
-  },
-  {
     key: "p3",
     name: "Forecast",
     description: (
@@ -124,10 +98,9 @@ const projects = [
           <b>Python</b>
         </u>{" "}
         expense traking app that uses <b>PySide6</b> to create a graphical
-        interface,
-        <b>Matplotlib</b> to generate graphs and <b>Pandas</b> for some
-        lightweight data analysis sourced from .csv files that are used for data
-        retention.
+        interface, <b>Matplotlib</b> to generate graphs and <b>Pandas</b> for
+        some lightweight data analysis sourced from .csv files that are used for
+        data retention.
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/espenseTracker.jpg",
@@ -153,6 +126,32 @@ const projects = [
     hosted: "Not yet",
     code: "https://github.com/Kuovinen/workoutTimerApp",
     url: "https://github.com/Kuovinen/workoutTimerApp",
+  },
+  {
+    key: "p7",
+    name: "ChatApp",
+    description: (
+      <span>
+        This is a fullstack MERN chat application with socket io. The front-end
+        is <b>JavaScript</b> code using the <b>ReactJS</b> library, The backend
+        is <b>NodeJS</b> using <b>ExpressJS</b> and <b>Mongoose</b>, the
+        database is <b>MongoDB</b>.
+      </span>
+    ),
+    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
+    tech: [
+      "JavaScipt",
+      "ReactJS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "HTML",
+      "CSS",
+    ],
+    using: "React, TypeScript",
+    hosted: "Not yet",
+    code: "https://github.com/Kuovinen/ChatApp",
+    url: "https://chatapp-o2zq.onrender.com",
   },
 ];
 export default projects;
