@@ -13,7 +13,15 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
-    tech: ["TypeScipt", "ReactJS"],
+    tech: [
+      "JavaScipt",
+      "ReactJS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "HTML",
+      "CSS",
+    ],
     using: "React, TypeScript",
     hosted: "Not yet",
     code: "https://github.com/Kuovinen/ChatApp",
@@ -32,7 +40,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/weatherMap.jpg",
-    tech: ["ReactJS", "JavaScript", "Bootstrap", "Jest"],
+    tech: ["ReactJS", "JavaScript", "Bootstrap", "Jest", "HTML", "CSS"],
     using: "GoogleMaps API, 7Timer weather API,  Geonames API, Bootstrap ",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/weathermap",
@@ -52,7 +60,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/restaurantScreen.jpg",
-    tech: ["ReactJS", "JavaScript", "Sass"],
+    tech: ["ReactJS", "JavaScript", "Sass", "HTML", "CSS"],
     using: "React, Redux, Sass, SessionStorage",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/Restaurant",
@@ -68,7 +76,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/taskManagerScreen.jpg",
-    tech: ["ReactJS", "JavaScript"],
+    tech: ["ReactJS", "JavaScript", "HTML", "CSS"],
     using: "React and LocalStorage",
     hosted: "Netlify",
     code: "https://github.com/RomanZujev/TaskManager",
@@ -86,7 +94,7 @@ const projects = [
       </span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/colorTools.jpg",
-    tech: ["JavaScript"],
+    tech: ["JavaScript", "HTML", "CSS"],
     using: "pure JavaScript",
     hosted: "FireBase",
     code: "https://github.com/RomanZujev/ColorTools",
@@ -99,7 +107,7 @@ const projects = [
       <span>My first front-end, non framework project, using TypeScript</span>
     ),
     img: process.env.PUBLIC_URL + "projectImages/cookbookDBScreen.jpg",
-    tech: ["TypeScipt"],
+    tech: ["TypeScipt", "HTML", "CSS"],
     using: "TypeScript, Webpack",
     hosted: "FireBase",
     code: "https://github.com/RomanZujev/CookBook/tree/portfolio",
