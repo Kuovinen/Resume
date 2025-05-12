@@ -108,28 +108,26 @@ const projects = [
 
   {
     key: "p2",
-    name: "NoteTaker",
+    name: "ExpenseTracker",
     description: (
       <span>
         A{" "}
         <u>
-          <b>full-stack</b>
+          <b>Python</b>
         </u>{" "}
-        React memo taking app written in <b>TypeScript</b> and hosted on Netlify
-        that also contains it's own <b>Node.Js/Express</b> server that's written
-        in <b>JavaScript</b> and hosted on <b>AWS</b> under it's own domain name
-        as well as using <b>MongoDB</b> as a database hosted on their{" "}
-        <b>Atlas</b> service. Created to bring all the individual components I
-        have studied into one cohesive whole.
-        <span className="ylw">* This project is under development.</span>
+        expense traking app that uses <b>PySide6</b> to create a graphical
+        interface,
+        <b>Matplotlib</b> to generate graphs and <b>Pandas</b> for some
+        lightweight data analysis sourced from .csv files that are used for data
+        retention.
       </span>
     ),
-    img: process.env.PUBLIC_URL + "projectImages/noteTaker.jpg",
-    tech: ["MongoDB", "NodeJS", "ReactJS", "TypeScipt", "Express", "AWS"],
-    using: "TypeScript, React, Express.js, MongoDb",
-    hosted: "AWS & Netlify",
-    code: "https://github.com/RomanZujev/rnotes",
-    url: "https://rznotes.netlify.app/",
+    img: process.env.PUBLIC_URL + "projectImages/espenseTracker.jpg",
+    tech: [],
+    using: "",
+    hosted: "",
+    code: "https://github.com/Kuovinen/ExpenseTracker",
+    url: "https://github.com/Kuovinen/ExpenseTracker",
   },
   {
     key: "p7.1",
