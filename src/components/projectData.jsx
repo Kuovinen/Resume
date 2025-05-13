@@ -20,7 +20,32 @@ const projects = [
     code: "https://github.com/RomanZujev/weathermap",
     url: "https://rzweathermap.netlify.app/",
   },
-
+  {
+    key: "p7",
+    name: "ChatApp",
+    description: (
+      <span>
+        This is a fullstack MERN chat application with socket io. The front-end
+        is <b>JavaScript</b> code using the <b>ReactJS</b> library, The backend
+        is <b>NodeJS</b> using <b>ExpressJS</b> and <b>Mongoose</b>, the
+        database is <b>MongoDB</b>.
+      </span>
+    ),
+    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
+    tech: [
+      "JavaScipt",
+      "ReactJS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "HTML",
+      "CSS",
+    ],
+    using: "React, TypeScript",
+    hosted: "Not yet",
+    code: "https://github.com/Kuovinen/ChatApp",
+    url: "https://chatapp-o2zq.onrender.com",
+  },
   {
     key: "p1",
     name: "Restaurant",
@@ -89,6 +114,23 @@ const projects = [
   },
 
   {
+    key: "p7.1",
+    name: "TimerApp",
+    description: (
+      <span>
+        A <b>React Native</b> timer app for workouts. Written in JavaScript it
+        uses the <b> Expo </b> framework. Runs on both IOS and Android.
+        <br />
+      </span>
+    ),
+    img: process.env.PUBLIC_URL + "projectImages/movieDBScreen.jpg",
+    tech: ["JavaScript", "ReactJS"],
+    using: "ReactJs, JavaScript",
+    hosted: "Not yet",
+    code: "https://github.com/Kuovinen/workoutTimerApp",
+    url: "https://github.com/Kuovinen/workoutTimerApp",
+  },
+  {
     key: "p2",
     name: "ExpenseTracker",
     description: (
@@ -109,49 +151,6 @@ const projects = [
     hosted: "",
     code: "https://github.com/Kuovinen/ExpenseTracker",
     url: "https://github.com/Kuovinen/ExpenseTracker",
-  },
-  {
-    key: "p7.1",
-    name: "TimerApp",
-    description: (
-      <span>
-        A <b>React Native</b> timer app for workouts. Written in JavaScript it
-        uses the <b> Expo </b> framework. Runs on both IOS and Android.
-        <br />
-      </span>
-    ),
-    img: process.env.PUBLIC_URL + "projectImages/movieDBScreen.jpg",
-    tech: ["JavaScript", "ReactJS"],
-    using: "ReactJs, JavaScript",
-    hosted: "Not yet",
-    code: "https://github.com/Kuovinen/workoutTimerApp",
-    url: "https://github.com/Kuovinen/workoutTimerApp",
-  },
-  {
-    key: "p7",
-    name: "ChatApp",
-    description: (
-      <span>
-        This is a fullstack MERN chat application with socket io. The front-end
-        is <b>JavaScript</b> code using the <b>ReactJS</b> library, The backend
-        is <b>NodeJS</b> using <b>ExpressJS</b> and <b>Mongoose</b>, the
-        database is <b>MongoDB</b>.
-      </span>
-    ),
-    img: process.env.PUBLIC_URL + "projectImages/chatAppScreen.jpg",
-    tech: [
-      "JavaScipt",
-      "ReactJS",
-      "MongoDB",
-      "NodeJS",
-      "Express",
-      "HTML",
-      "CSS",
-    ],
-    using: "React, TypeScript",
-    hosted: "Not yet",
-    code: "https://github.com/Kuovinen/ChatApp",
-    url: "https://chatapp-o2zq.onrender.com",
   },
 ];
 export default projects;
